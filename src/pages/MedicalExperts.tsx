@@ -170,7 +170,16 @@ const MedicalExperts = () => {
   const handleSearch = () => {
     // Simulate search - in real implementation this would be an API call
     if (postalCode.length >= 5) {
-      setSearchResults(mockExperts);
+      let filteredExperts = mockExperts;
+      
+      // Filter by specialty if selected and not "alle"
+      if (specialty && specialty !== "alle") {
+        filteredExperts = mockExperts.filter(expert => 
+          expert.specialty === specialty
+        );
+      }
+      
+      setSearchResults(filteredExperts);
     }
   };
 
@@ -250,7 +259,7 @@ const MedicalExperts = () => {
                             <SelectValue placeholder="Fachbereich wählen" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="">Alle Fachbereiche</SelectItem>
+                            <SelectItem value="alle">Alle Fachbereiche</SelectItem>
                             {specialties.map((spec) => (
                               <SelectItem key={spec} value={spec}>
                                 {spec}
