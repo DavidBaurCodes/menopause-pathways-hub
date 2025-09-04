@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Deine <span className="text-gradient">Wechseljahre</span>: 83 Symptome – kein Mythos, sondern Realität.
+                Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
                 83 Symptome – kein Mythos, sondern Realität.
