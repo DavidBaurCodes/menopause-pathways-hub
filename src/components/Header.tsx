@@ -13,11 +13,11 @@ const Header = () => {
             <SidebarTrigger className="p-2 rounded-lg hover:bg-muted transition-colors" />
             <div className="flex items-center space-x-2">
               <Logo size={32} />
-              <Link to="/" className="text-xl font-bold text-gradient">AOK PLUS</Link>
+              <Link to="/" className="text-xl font-bold text-gradient whitespace-nowrap">AOK PLUS</Link>
             </div>
           </div>
 
-          <div className="flex items-center space-x-2 sm:space-x-3 pr-2">
+          <div className="hidden md:flex items-center space-x-2 sm:space-x-3 pr-2">
             <Button variant="outline" size="sm" className="flex items-center gap-2 border-2" asChild>
               <Link to="/login">
                 <LogIn className="w-4 h-4" />

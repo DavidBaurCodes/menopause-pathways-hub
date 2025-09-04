@@ -10,6 +10,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
+import { Button } from "@/components/ui/button";
 import { 
   Home, 
   BookOpen, 
@@ -22,7 +23,9 @@ import {
   Shield,
   ClipboardList,
   Search,
-  Phone
+  Phone,
+  LogIn,
+  UserPlus
 } from "lucide-react";
 
 const navigationGroups = [
@@ -100,6 +103,34 @@ export function AppSidebar() {
             </SidebarGroupContent>
           </SidebarGroup>
         ))}
+        
+        {/* Mobile-only authentication section */}
+        <SidebarGroup className="md:hidden">
+          <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-4 py-2">
+            {state === "expanded" && "Account"}
+          </SidebarGroupLabel>
+          
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <NavLink to="/login" className="hover:bg-muted/50 text-muted-foreground hover:text-foreground">
+                    <LogIn className="h-4 w-4 flex-shrink-0" />
+                    {state === "expanded" && <span className="ml-3">Anmelden</span>}
+                  </NavLink>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <NavLink to="/register" className="hover:bg-muted/50 text-muted-foreground hover:text-foreground">
+                    <UserPlus className="h-4 w-4 flex-shrink-0" />
+                    {state === "expanded" && <span className="ml-3">Registrieren</span>}
+                  </NavLink>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
       </SidebarContent>
     </Sidebar>
   );
