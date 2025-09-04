@@ -9,6 +9,13 @@ import { Users, MessageCircle, Heart, Calendar, Star, ArrowRight, UserCheck } fr
 const Community = () => {
   const communityFeatures = [
     {
+      icon: <Star className="w-6 h-6" />,
+      title: "Netzwerk 55 Plus",
+      description: "Unser Flagschiff-Produkt: Exklusive Community für Frauen ab 55 mit Premium-Support und Expertinnen-Betreuung.",
+      members: "1,124",
+      color: "text-primary"
+    },
+    {
       icon: <MessageCircle className="w-6 h-6" />,
       title: "Diskussionsforen",
       description: "Tauschen Sie sich mit anderen Frauen über Ihre Erfahrungen aus und finden Sie Antworten auf Ihre Fragen.",
