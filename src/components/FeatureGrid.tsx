@@ -88,15 +88,15 @@ const FeatureGrid = () => {
     {
       icon: <Briefcase className="w-8 h-8" />,
       title: "Arbeitskultur mit Weitblick",
-      description: "Von anpassbaren Arbeitszeiten über Rückzugsräume bis hin zu sensibler Führungskultur. Entscheidend ist, gemeinsam mit den betroffenen Mitarbeitenden passgenaue Lösungen zu entwickeln, die sowohl das Wohlbefinden stärken als auch die Arbeitsfähigkeit erhalten. So wird Verhältnisprävention zur gelebten Realität – und der Arbeitsplatz zu einem Ort echter Fürsorge.",
-      href: "#workplace-culture", 
+      description: "Passgenaue betriebliche Lösungen für Wechseljahre - von flexiblen Arbeitszeiten bis zu sensibler Führungskultur.",
+      href: "/arbeitskultur", 
       color: "text-primary-light"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Dein Berufsalltag - deine Strategie",
-      description: "Wechseljahre und Job? Geht klar – wenn du weißt, was dir guttut. Hier findest du erste Ideen, wie du deinen Arbeitsalltag aktiv, fit und motiviert gestalten kannst.",
-      href: "#work-strategies",
+      description: "Praktische Strategien und Tipps für einen aktiven, motivierten Arbeitsalltag während der Wechseljahre.",
+      href: "/berufsalltag",
       color: "text-accent"
     }
   ];

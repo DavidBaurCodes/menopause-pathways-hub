@@ -27,6 +27,8 @@ import Wellness from "./pages/Wellness";
 import Psyche from "./pages/Psyche";
 import Hormontherapie from "./pages/Hormontherapie";
 import Allies from "./pages/Allies";
+import Arbeitskultur from "./pages/Arbeitskultur";
+import Berufsalltag from "./pages/Berufsalltag";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -64,6 +66,8 @@ const App = () => (
                   <Route path="/psyche" element={<Psyche />} />
                   <Route path="/hormontherapie" element={<Hormontherapie />} />
                   <Route path="/allies" element={<Allies />} />
+                  <Route path="/arbeitskultur" element={<Arbeitskultur />} />
+                  <Route path="/berufsalltag" element={<Berufsalltag />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
