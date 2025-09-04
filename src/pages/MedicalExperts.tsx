@@ -49,7 +49,9 @@ const MedicalExperts = () => {
       reviews: 156,
       availability: "Termine verfügbar",
       distance: "2.1 km",
-      languages: ["Deutsch", "Englisch"]
+      languages: ["Deutsch", "Englisch"],
+      acceptsInsurance: true,
+      onlineBooking: true
     },
     {
       id: 2,
@@ -63,7 +65,9 @@ const MedicalExperts = () => {
       reviews: 203,
       availability: "Wartezeit: 2-3 Wochen",
       distance: "3.5 km",
-      languages: ["Deutsch"]
+      languages: ["Deutsch"],
+      acceptsInsurance: true,
+      onlineBooking: false
     },
     {
       id: 3,
@@ -77,7 +81,89 @@ const MedicalExperts = () => {
       reviews: 89,
       availability: "Termine verfügbar",
       distance: "1.8 km",
-      languages: ["Deutsch", "Französisch"]
+      languages: ["Deutsch", "Französisch"],
+      acceptsInsurance: true,
+      onlineBooking: true
+    },
+    {
+      id: 4,
+      name: "Dr. med. Andrea Schmidt",
+      specialty: "Psychotherapeutin",
+      specialization: "Lebensphasenberatung & Wechseljahre",
+      address: "Königsbrücker Straße 78, 01099 Dresden",
+      phone: "0351 567890",
+      email: "kontakt@psychotherapie-schmidt.de",
+      rating: 4.6,
+      reviews: 127,
+      availability: "Wartezeit: 4-6 Wochen",
+      distance: "4.2 km",
+      languages: ["Deutsch", "Englisch"],
+      acceptsInsurance: true,
+      onlineBooking: false
+    },
+    {
+      id: 5,
+      name: "Dr. med. Thomas Richter",
+      specialty: "Kardiologe",
+      specialization: "Herz-Kreislauf & Wechseljahre",
+      address: "Fetscherstraße 12, 01307 Dresden",
+      phone: "0351 234567",
+      email: "praxis@kardiologie-richter.de",
+      rating: 4.5,
+      reviews: 89,
+      availability: "Termine verfügbar",
+      distance: "5.1 km",
+      languages: ["Deutsch"],
+      acceptsInsurance: true,
+      onlineBooking: true
+    },
+    {
+      id: 6,
+      name: "Maria Hoffmann",
+      specialty: "Ernährungsberaterin",
+      specialization: "Wechseljahre-Ernährung & Stoffwechsel",
+      address: "Neustadt Markt 8, 01097 Dresden",
+      phone: "0351 876543",
+      email: "beratung@ernaehrung-hoffmann.de",
+      rating: 4.9,
+      reviews: 76,
+      availability: "Termine verfügbar",
+      distance: "2.8 km",
+      languages: ["Deutsch", "Italienisch"],
+      acceptsInsurance: false,
+      onlineBooking: true
+    },
+    {
+      id: 7,
+      name: "Dr. med. Claudia Berndt",
+      specialty: "Dermatologin",
+      specialization: "Hautveränderungen in den Wechseljahren",
+      address: "Wilsdruffer Straße 25, 01067 Dresden",
+      phone: "0351 987654",
+      email: "info@hautarzt-berndt.de",
+      rating: 4.7,
+      reviews: 142,
+      availability: "Wartezeit: 1-2 Wochen",
+      distance: "1.5 km",
+      languages: ["Deutsch", "Spanisch"],
+      acceptsInsurance: true,
+      onlineBooking: true
+    },
+    {
+      id: 8,
+      name: "Frank Weber",
+      specialty: "Osteopath",
+      specialization: "Ganzheitliche Behandlung & Wechseljahre",
+      address: "Bautzner Straße 67, 01099 Dresden",
+      phone: "0351 456789",
+      email: "praxis@osteopathie-weber.de",
+      rating: 4.8,
+      reviews: 94,
+      availability: "Termine verfügbar",
+      distance: "3.7 km",
+      languages: ["Deutsch", "Englisch"],
+      acceptsInsurance: false,
+      onlineBooking: true
     }
   ];
 
@@ -244,7 +330,7 @@ const MedicalExperts = () => {
                                   <Mail className="w-4 h-4 text-muted-foreground" />
                                   <span>{expert.email}</span>
                                 </div>
-                                <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-2">
                                   <Clock className="w-4 h-4 text-muted-foreground" />
                                   <span className={expert.availability.includes("verfügbar") ? "text-success" : "text-warning"}>
                                     {expert.availability}
@@ -252,7 +338,7 @@ const MedicalExperts = () => {
                                 </div>
                               </div>
 
-                              <div className="flex items-center gap-2 mt-4">
+                              <div className="flex flex-wrap items-center gap-2 mt-4">
                                 <span className="text-sm text-muted-foreground">Sprachen:</span>
                                 {expert.languages.map((lang) => (
                                   <Badge key={lang} variant="outline">
@@ -260,14 +346,27 @@ const MedicalExperts = () => {
                                   </Badge>
                                 ))}
                               </div>
+
+                              <div className="flex flex-wrap items-center gap-2 mt-2">
+                                {expert.acceptsInsurance && (
+                                  <Badge variant="secondary">Kassenpatienten</Badge>
+                                )}
+                                {expert.onlineBooking && (
+                                  <Badge variant="secondary">Online-Terminbuchung</Badge>
+                                )}
+                              </div>
                             </div>
 
                             <div className="lg:w-48 flex flex-col gap-2">
-                              <Button className="w-full">
-                                Termin vereinbaren
+                              <Button className="w-full" asChild>
+                                <a href={`tel:${expert.phone}`}>
+                                  Termin vereinbaren
+                                </a>
                               </Button>
-                              <Button variant="outline" className="w-full">
-                                Mehr Infos
+                              <Button variant="outline" className="w-full" asChild>
+                                <a href={`mailto:${expert.email}`}>
+                                  Kontakt aufnehmen
+                                </a>
                               </Button>
                             </div>
                           </div>

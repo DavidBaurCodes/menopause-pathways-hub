@@ -16,7 +16,7 @@ const FeatureGrid = () => {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Medizinische Experten",
-      description: "Qualifizierte Gynäkologen, Dermatologen, Kardiologen, HNO-Ärzte, Osteopathen, Endokrinologen, Physiotherapeuten, Psychologen, Psychotherapeuten und Ernährungsberater in Ihrer Nähe.",
+      description: "Finden Sie qualifizierte Fachärzte und Therapeuten für Frauengesundheit in Ihrer Nähe.",
       href: "/medical-experts",
       color: "text-primary"
     },
