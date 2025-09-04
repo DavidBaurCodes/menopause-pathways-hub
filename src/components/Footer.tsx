@@ -15,6 +15,7 @@ const Footer = () => {
     { title: "Gemeinschaftsforen", href: "#community" },
     { title: "Versicherungsleistungen", href: "#benefits" },
     { title: "Support kontaktieren", href: "#contact" },
+    { title: "Impressum", href: "#impressum" },
     { title: "Datenschutzerklärung", href: "#privacy" },
   ];
 
