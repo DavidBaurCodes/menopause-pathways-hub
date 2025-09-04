@@ -13,7 +13,8 @@ const HeroSection = () => {
               </h1>
                <div className="flex items-center gap-3">
                  <Logo size={40} />
-                 <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">Mein Meno Plus</span>
+                 <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">Dein
+menoPLUS</span>
                </div>
             </div>
 
