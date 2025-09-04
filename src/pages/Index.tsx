@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeatureGrid from "@/components/FeatureGrid";
+import InformationChannels from "@/components/InformationChannels";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -45,6 +46,7 @@ const Index = () => {
         <main className="flex-1">
           <HeroSection />
           <FeatureGrid />
+          <InformationChannels />
         </main>
         
         <Footer />
