@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Link } from "react-router-dom";
 import { Logo } from "@/components/ui/logo";
+import { LogIn, Sparkles } from "lucide-react";
 
 const Header = () => {
   return (
@@ -17,10 +18,12 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="flex items-center gap-2">
+              <LogIn className="w-4 h-4" />
               Anmelden
             </Button>
-            <Button size="sm" className="gradient-primary text-white">
+            <Button size="sm" className="gradient-primary text-white flex items-center gap-2">
+              <Sparkles className="w-4 h-4" />
               Jetzt starten
             </Button>
           </div>

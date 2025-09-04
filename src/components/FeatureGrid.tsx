@@ -8,20 +8,39 @@ import {
   Headphones, 
   Heart,
   ArrowRight,
-  Zap
+  Activity,
+  Apple,
+  Flower2,
+  Brain,
+  MessageCircle,
+  Lightbulb,
+  HandHeart,
+  Building2,
+  UserCheck,
+  Stethoscope,
+  Video,
+  Podcast
 } from "lucide-react";
+import { 
+  HeartPulseIcon, 
+  NutritionIcon, 
+  CommunityIcon,
+  HealthCareIcon,
+  FitnessIcon,
+  LeafIcon
+} from "@/components/ui/logo";
 
 const FeatureGrid = () => {
   const healthFeatures = [
     {
-      icon: <Heart className="w-8 h-8" />,
+      icon: <Stethoscope className="w-8 h-8" />,
       title: "Medizinische Experten",
       description: "Finden Sie qualifizierte Fachärzte und Therapeuten für Frauengesundheit in Ihrer Nähe.",
       href: "/medical-experts",
       color: "text-primary"
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: <HeartPulseIcon className="w-8 h-8" />,
       title: "Hormontherapie & Telemedizin",
       description: "Umfassende Beratung zu Hormonbehandlungen und digitale Gesundheitsdienste für flexible Betreuung.",
       href: "/hormontherapie",
@@ -31,28 +50,28 @@ const FeatureGrid = () => {
 
   const lifestyleFeatures = [
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <FitnessIcon className="w-8 h-8" />,
       title: "Bewegung",
       description: "Virtuelle und Präsenz-Gruppensuche für Bewegungskurse und Präventionskurse der AOK PLUS.",
       href: "/bewegung",
       color: "text-success"
     },
     {
-      icon: <Heart className="w-8 h-8" />,
+      icon: <NutritionIcon className="w-8 h-8" />,
       title: "Ernährung",
       description: "Individuelle Ernährungsberatung online oder vor Ort mit AOK PLUS Angeboten.",
       href: "/ernaehrung",
       color: "text-primary-light"
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: <Flower2 className="w-8 h-8" />,
       title: "Wellness",
       description: "Me-Time Strategien, Stressbewältigung und Achtsamkeits-Apps für Ihr Wohlbefinden.",
       href: "/wellness",
       color: "text-accent"
     },
     {
-      icon: <BookOpen className="w-8 h-8" />,
+      icon: <Brain className="w-8 h-8" />,
       title: "Psyche",
       description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung.",
       href: "/psyche",
@@ -62,21 +81,21 @@ const FeatureGrid = () => {
 
   const communityFeatures = [
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <CommunityIcon className="w-8 h-8" />,
       title: "Community",
       description: "Verbinden Sie sich mit Gleichgesinnten, teilen Sie Erfahrungen und bauen Sie unterstützende Netzwerke auf.",
       href: "/community",
       color: "text-primary"
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: <Lightbulb className="w-8 h-8" />,
       title: "Life Hacks - Tipps",
       description: "Von Brainfog bis Hitzewallungen: Entdecke clevere Alltagstipps und Strategien, die dir helfen, dich wieder wohl in deinem Körper zu fühlen.",
       href: "/lifehacks",
       color: "text-success"
     },
     {
-      icon: <Heart className="w-8 h-8" />,
+      icon: <HandHeart className="w-8 h-8" />,
       title: "Allies - Partner",
       description: "Informationen und Ressourcen für Partner, Familie, Freunde und Arbeitgebende von betroffenen Frauen.",
       href: "/allies",
@@ -86,14 +105,14 @@ const FeatureGrid = () => {
 
   const workplaceFeatures = [
     {
-      icon: <Briefcase className="w-8 h-8" />,
+      icon: <Building2 className="w-8 h-8" />,
       title: "Arbeitskultur mit Weitblick",
       description: "Passgenaue betriebliche Lösungen für Wechseljahre - von flexiblen Arbeitszeiten bis zu sensibler Führungskultur.",
       href: "/arbeitskultur", 
       color: "text-primary-light"
     },
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <UserCheck className="w-8 h-8" />,
       title: "Dein Berufsalltag - deine Strategie",
       description: "Praktische Strategien und Tipps für einen aktiven, motivierten Arbeitsalltag während der Wechseljahre.",
       href: "/berufsalltag",
@@ -103,7 +122,7 @@ const FeatureGrid = () => {
 
   const mediaFeatures = [
     {
-      icon: <Headphones className="w-8 h-8" />,
+      icon: <Video className="w-8 h-8" />,
       title: "Medien", 
       description: "Noch Fragen - Wir haben weiterführende Antworten: Blogs, Videos, Podcast, Literatur-Empfehlungen, LinkedIn-Posts, Socialmedia-Kanäle, Telefonberatung und Plakate.",
       href: "/medien",

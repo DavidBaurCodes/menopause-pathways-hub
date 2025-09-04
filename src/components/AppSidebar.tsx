@@ -11,28 +11,31 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { 
-  FileText, 
+  Home, 
   BookOpen, 
   GraduationCap, 
   PenTool, 
   Lightbulb, 
-  Play, 
+  Video, 
   Users, 
   Building2, 
-  Shield 
+  Shield,
+  ClipboardList,
+  Search,
+  Phone
 } from "lucide-react";
 
 const navigationGroups = [
   {
     label: "Navigation",
     items: [
-      { title: "Übersicht", url: "/", icon: FileText },
+      { title: "Übersicht", url: "/", icon: Home },
     ]
   },
   {
     label: "Wissen & Tools",
     items: [
-      { title: "Assessment", url: "/assessment", icon: FileText },
+      { title: "Assessment", url: "/assessment", icon: ClipboardList },
       { title: "Lexikon", url: "/lexicon", icon: BookOpen },
       { title: "Wissen", url: "/knowledge", icon: GraduationCap },
     ]
@@ -42,7 +45,7 @@ const navigationGroups = [
     items: [
       { title: "Blog", url: "/blog", icon: PenTool },
       { title: "Lifehacks", url: "/lifehacks", icon: Lightbulb },
-      { title: "Medien", url: "/podcasts", icon: Play },
+      { title: "Medien", url: "/podcasts", icon: Video },
       { title: "Community", url: "/community", icon: Users },
     ]
   },
@@ -51,7 +54,7 @@ const navigationGroups = [
     items: [
       { title: "Arbeitsplatz", url: "/workplace", icon: Building2 },
       { title: "Leistungen", url: "/benefits", icon: Shield },
-      { title: "Informationskanäle", url: "/channels", icon: Shield },
+      { title: "Informationskanäle", url: "/channels", icon: Phone },
     ]
   }
 ];
