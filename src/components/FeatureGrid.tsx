@@ -46,8 +46,8 @@ const FeatureGrid = () => {
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
-      title: "Psyche & Präventivgesetz",
-      description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung nach dem Präventivgesetz.",
+      title: "Psyche & Präventionsgesetz",
+      description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung nach dem Präventionsgesetz.",
       href: "#mental-health",
       color: "text-accent"
     }
