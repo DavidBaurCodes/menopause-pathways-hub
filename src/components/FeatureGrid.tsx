@@ -44,7 +44,7 @@ const FeatureGrid = () => {
       title: "Hormontherapie & Telemedizin",
       description: "Umfassende Beratung zu Hormonbehandlungen und digitale Gesundheitsdienste für flexible Betreuung.",
       href: "/hormontherapie",
-      color: "text-accent"
+      color: "text-primary"
     }
   ];
 
@@ -54,21 +54,21 @@ const FeatureGrid = () => {
       title: "Bewegung",
       description: "Virtuelle und Präsenz-Gruppensuche für Bewegungskurse und Präventionskurse der AOK PLUS.",
       href: "/bewegung",
-      color: "text-success"
+      color: "text-primary"
     },
     {
       icon: <NutritionIcon className="w-8 h-8" />,
       title: "Ernährung",
       description: "Individuelle Ernährungsberatung online oder vor Ort mit AOK PLUS Angeboten.",
       href: "/ernaehrung",
-      color: "text-primary-light"
+      color: "text-primary"
     },
     {
       icon: <Flower2 className="w-8 h-8" />,
       title: "Wellness",
       description: "Me-Time Strategien, Stressbewältigung und Achtsamkeits-Apps für dein Wohlbefinden.",
       href: "/wellness",
-      color: "text-accent"
+      color: "text-primary"
     },
     {
       icon: <Brain className="w-8 h-8" />,
@@ -109,14 +109,14 @@ const FeatureGrid = () => {
       title: "Arbeitskultur mit Weitblick",
       description: "Passgenaue betriebliche Lösungen für Wechseljahre - von flexiblen Arbeitszeiten bis zu sensibler Führungskultur.",
       href: "/arbeitskultur", 
-      color: "text-primary-light"
+      color: "text-primary"
     },
     {
       icon: <UserCheck className="w-8 h-8" />,
       title: "Dein Berufsalltag - deine Strategie",
       description: "Praktische Strategien und Tipps für einen aktiven, motivierten Arbeitsalltag während der Wechseljahre.",
       href: "/berufsalltag",
-      color: "text-accent"
+      color: "text-primary"
     }
   ];
 
