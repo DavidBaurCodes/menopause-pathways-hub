@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Linkedin, FileText, Calendar, BookOpen } from "lucide-react";
+import { MessageCircle, Linkedin, FileText, Calendar, BookOpen, Mail } from "lucide-react";
 
 const InformationChannels = () => {
   const channels = [
@@ -19,6 +19,14 @@ const InformationChannels = () => {
       action: "Folgen",
       href: "https://linkedin.com/company/aok-plus",
       color: "text-blue-600"
+    },
+    {
+      title: "Newsletter",
+      description: "Regelmäßige Updates direkt per E-Mail",
+      icon: Mail,
+      action: "Abonnieren",
+      href: "#newsletter",
+      color: "text-pink-600"
     },
     {
       title: "Flyer anfordern",
@@ -56,7 +64,7 @@ const InformationChannels = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
           {channels.map((channel) => (
             <Card key={channel.title} className="text-center hover:shadow-lg transition-shadow">
               <CardHeader className="pb-4">
