@@ -11,10 +11,16 @@ const HeroSection = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
-               <div className="flex items-center gap-3">
-                 <Logo size={40} />
-                 <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">Dein
-menoPLUS</span>
+               <div className="space-y-1">
+                 <div className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">
+                   Dein
+                 </div>
+                 <div className="flex items-center gap-3">
+                   <Logo size={40} />
+                   <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
+                     meno<span className="font-bold">PLUS</span>
+                   </span>
+                 </div>
                </div>
             </div>
 
