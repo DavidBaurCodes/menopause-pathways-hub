@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/meno-ladies-new-2.webp";
+import heroImage from "@/assets/meno-ladies-3.webp";
 const HeroSection = () => {
   return <section className="relative min-h-[80vh] flex items-center gradient-subtle">
       <div className="container mx-auto px-4 py-12">
@@ -9,21 +9,24 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Deine <span className="text-gradient">Wechseljahre</span>
+                 <span className="text-gradient">Wechseljahre.</span>
               </h1>
                <div className="space-y-1">
                  <div className="flex items-center gap-3">
                    <Logo size={40} />
-                   <div className="flex items-center gap-1 justify-items-center">
-                    <div className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
-                      Dein
+                   <div className="flex items-start gap-1 flex-col">
+                    {/* <div className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold">
+                      Mein
                       <br />
-                    </div>
+                    </div> */}
                     <div className="flex">
-                      <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">
+                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold p-1">
+                        Mein 
+                      </span>
+                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-script font-bold p-1">
                         meno
                       </span>
-                      <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
+                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold p-1">
                         PLUS
                       </span>
                     </div>
