@@ -13,35 +13,35 @@ const PersonalizedJourney = () => {
   const questions = [
     {
       id: "age",
-      title: "What's your age range?",
+      title: "Wie alt sind Sie?",
       options: [
-        { value: "35-40", label: "35-40 years" },
-        { value: "41-45", label: "41-45 years" },
-        { value: "46-50", label: "46-50 years" },
-        { value: "51-55", label: "51-55 years" },
-        { value: "55+", label: "55+ years" },
+        { value: "35-40", label: "35-40 Jahre" },
+        { value: "41-45", label: "41-45 Jahre" },
+        { value: "46-50", label: "46-50 Jahre" },
+        { value: "51-55", label: "51-55 Jahre" },
+        { value: "55+", label: "55+ Jahre" },
       ],
     },
     {
       id: "symptoms",
-      title: "Which symptoms are you experiencing?",
+      title: "Welche Symptome erleben Sie?",
       options: [
-        { value: "irregular-periods", label: "Irregular periods" },
-        { value: "hot-flashes", label: "Hot flashes" },
-        { value: "sleep-issues", label: "Sleep difficulties" },
-        { value: "mood-changes", label: "Mood changes" },
-        { value: "none-yet", label: "No symptoms yet" },
+        { value: "irregular-periods", label: "Unregelmäßige Periode" },
+        { value: "hot-flashes", label: "Hitzewallungen" },
+        { value: "sleep-issues", label: "Schlafprobleme" },
+        { value: "mood-changes", label: "Stimmungsschwankungen" },
+        { value: "none-yet", label: "Noch keine Symptome" },
       ],
     },
     {
       id: "stage",
-      title: "Which stage best describes you?",
+      title: "Welche Phase beschreibt Sie am besten?",
       options: [
-        { value: "pre", label: "Pre-menopause (regular periods)" },
-        { value: "peri", label: "Perimenopause (irregular periods)" },
-        { value: "meno", label: "Menopause (no period for 12+ months)" },
-        { value: "post", label: "Post-menopause" },
-        { value: "unsure", label: "I'm not sure" },
+        { value: "pre", label: "Prämenopause (regelmäßige Periode)" },
+        { value: "peri", label: "Perimenopause (unregelmäßige Periode)" },
+        { value: "meno", label: "Menopause (keine Periode seit 12+ Monaten)" },
+        { value: "post", label: "Postmenopause" },
+        { value: "unsure", label: "Ich bin mir nicht sicher" },
       ],
     },
   ];
@@ -68,24 +68,24 @@ const PersonalizedJourney = () => {
     if (stage === "pre" || age === "35-40") {
       recommendations.push({
         icon: <Calendar className="w-6 h-6" />,
-        title: "Track Your Cycle",
-        description: "Start monitoring changes in your menstrual cycle to prepare for perimenopause.",
+        title: "Zyklusverfolgung",
+        description: "Beginnen Sie mit der Beobachtung von Veränderungen Ihres Zyklus zur Vorbereitung auf die Perimenopause.",
       });
     }
 
     if (symptoms === "hot-flashes" || symptoms === "sleep-issues") {
       recommendations.push({
         icon: <Heart className="w-6 h-6" />,
-        title: "Lifestyle Management",
-        description: "Discover cooling techniques, sleep hygiene, and stress reduction strategies.",
+        title: "Lebensführung",
+        description: "Entdecken Sie Kühlungstechniken, Schlafhygiene und Stressabbau-Strategien.",
       });
     }
 
     if (stage === "peri" || stage === "meno") {
       recommendations.push({
         icon: <Brain className="w-6 h-6" />,
-        title: "Cognitive Wellness",
-        description: "Learn about brain fog, memory support, and mental health during menopause.",
+        title: "Kognitive Gesundheit",
+        description: "Lernen Sie über Gehirnnebel, Gedächtnisunterstützung und psychische Gesundheit in den Wechseljahren.",
       });
     }
 
@@ -100,11 +100,11 @@ const PersonalizedJourney = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Your Personalized <span className="text-gradient">Journey Plan</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                Ihr personalisierter <span className="text-gradient">Begleitplan</span>
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Based on your responses, here are our recommended resources:
+              <p className="text-base sm:text-lg text-muted-foreground px-4">
+                Basierend auf Ihren Antworten empfehlen wir Ihnen diese Ressourcen:
               </p>
             </div>
 
@@ -132,12 +132,12 @@ const PersonalizedJourney = () => {
                   setShowResults(false);
                 }}
                 variant="outline"
-                className="mr-4"
+                className="mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto"
               >
-                Retake Assessment
+                Assessment wiederholen
               </Button>
-              <Button className="gradient-primary text-white">
-                Explore Full Resources
+              <Button className="gradient-primary text-white w-full sm:w-auto">
+                Alle Ressourcen erkunden
               </Button>
             </div>
           </div>
@@ -153,28 +153,28 @@ const PersonalizedJourney = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Discover Your <span className="text-gradient">Menopause Journey</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
+              Entdecken Sie Ihre <span className="text-gradient">Wechseljahre-Begleitung</span>
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Take our quick assessment to receive personalized resources and support
+            <p className="text-base sm:text-lg text-muted-foreground px-4">
+              Machen Sie unser kurzes Assessment für personalisierte Ressourcen und Unterstützung
             </p>
           </div>
 
           <Card className="shadow-medium">
             <CardHeader>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm font-medium text-muted-foreground">
-                  Question {currentStep + 1} of {questions.length}
+                <span className="text-xs sm:text-sm font-medium text-muted-foreground">
+                  Frage {currentStep + 1} von {questions.length}
                 </span>
-                <div className="w-32 h-2 bg-muted rounded-full overflow-hidden">
+                <div className="w-24 sm:w-32 h-2 bg-muted rounded-full overflow-hidden">
                   <div 
                     className="h-full gradient-primary transition-all duration-300 ease-out"
                     style={{ width: `${((currentStep + 1) / questions.length) * 100}%` }}
                   />
                 </div>
               </div>
-              <CardTitle className="text-xl">{currentQuestion.title}</CardTitle>
+              <CardTitle className="text-lg sm:text-xl">{currentQuestion.title}</CardTitle>
             </CardHeader>
             
             <CardContent className="space-y-6">
@@ -185,27 +185,28 @@ const PersonalizedJourney = () => {
                 {currentQuestion.options.map((option) => (
                   <div key={option.value} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
                     <RadioGroupItem value={option.value} id={option.value} />
-                    <Label htmlFor={option.value} className="cursor-pointer flex-1 text-base">
+                    <Label htmlFor={option.value} className="cursor-pointer flex-1 text-sm sm:text-base">
                       {option.label}
                     </Label>
                   </div>
                 ))}
               </RadioGroup>
 
-              <div className="flex justify-between pt-6">
+              <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6">
                 <Button
                   variant="outline"
                   onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
                   disabled={currentStep === 0}
+                  className="w-full sm:w-auto order-2 sm:order-1"
                 >
-                  Previous
+                  Zurück
                 </Button>
                 <Button
                   onClick={nextStep}
                   disabled={!answers[currentQuestion.id]}
-                  className="gradient-primary text-white"
+                  className="gradient-primary text-white w-full sm:w-auto order-1 sm:order-2"
                 >
-                  {currentStep === questions.length - 1 ? "Get Results" : "Next"}
+                  {currentStep === questions.length - 1 ? "Ergebnisse erhalten" : "Weiter"}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>

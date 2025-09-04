@@ -15,43 +15,43 @@ const FeatureGrid = () => {
   const features = [
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Knowledge Center",
-      description: "Evidence-based articles, research studies, and expert insights on all aspects of menopause.",
+      title: "Wissensbereich",
+      description: "Evidenzbasierte Artikel, Forschungsstudien und Expertenwissen zu allen Aspekten der Wechseljahre.",
       href: "#knowledge",
       color: "text-accent"
     },
     {
       icon: <Headphones className="w-8 h-8" />,
-      title: "Podcasts & Media", 
-      description: "Expert interviews, personal stories, and workplace management guidance in audio format.",
+      title: "Podcasts & Medien", 
+      description: "Experteninterviews, persönliche Geschichten und Workplace-Management-Anleitungen im Audioformat.",
       href: "#podcasts",
       color: "text-primary"
     },
     {
       icon: <Briefcase className="w-8 h-8" />,
-      title: "Workplace Health",
-      description: "Comprehensive guides for organizations to support employees through menopause transitions.",
+      title: "Betriebliche Gesundheit",
+      description: "Umfassende Leitfäden für Unternehmen zur Unterstützung von Mitarbeitern in den Wechseljahren.",
       href: "#workplace", 
       color: "text-success"
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Insurance Benefits",
-      description: "Tailored coverage options and exclusive benefits for menopause-related healthcare needs.",
+      title: "Versicherungsleistungen",
+      description: "Maßgeschneiderte Versicherungsoptionen und exklusive Leistungen für Wechseljahre-Gesundheit.",
       href: "#benefits",
       color: "text-warning"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Community Support",
-      description: "Connect with others, share experiences, and find support in our inclusive community.",
+      title: "Gemeinschaftsunterstützung",
+      description: "Vernetzen Sie sich mit anderen, teilen Sie Erfahrungen und finden Sie Unterstützung in unserer Gemeinschaft.",
       href: "#community",
       color: "text-primary-light"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Personalized Tools",
-      description: "Interactive assessments and tailored resources based on your unique menopause journey.",
+      title: "Personalisierte Tools",
+      description: "Interaktive Bewertungen und maßgeschneiderte Ressourcen basierend auf Ihrer individuellen Wechseljahre-Reise.",
       href: "#journey",
       color: "text-accent"
     }
@@ -61,16 +61,16 @@ const FeatureGrid = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Everything You Need for Your <span className="text-gradient">Menopause Journey</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
+            Alles was Sie für Ihre <span className="text-gradient">Wechseljahre-Begleitung</span> brauchen
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From personalized assessments to workplace support, we provide comprehensive resources 
-            to empower you through every stage of menopause.
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+            Von personalisierten Bewertungen bis hin zur betrieblichen Unterstützung bieten wir 
+            umfassende Ressourcen, die Sie durch jede Phase der Wechseljahre stärken.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <Card 
               key={index} 
@@ -94,7 +94,7 @@ const FeatureGrid = () => {
                   asChild
                 >
                   <a href={feature.href}>
-                    Learn more 
+                    Mehr erfahren 
                     <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
                   </a>
                 </Button>
@@ -105,20 +105,20 @@ const FeatureGrid = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Get Started?
+          <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8 md:p-12">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
+              Bereit zu starten?
             </h3>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join thousands of women who have found support, knowledge, and empowerment 
-              through our comprehensive menopause resources.
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
+              Schließen Sie sich tausenden von Frauen an, die durch unsere umfassenden 
+              Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="gradient-primary text-white shadow-medium">
-                Take Assessment
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+              <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto">
+                Assessment machen
               </Button>
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5">
-                Browse Resources
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
+                Ressourcen durchstöbern
               </Button>
             </div>
           </div>

@@ -6,12 +6,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { title: "Menopause Journey", href: "#journey" },
-    { title: "Knowledge Center", href: "#knowledge" },
+    { title: "Wechseljahre-Begleiter", href: "#journey" },
+    { title: "Wissensbereich", href: "#knowledge" },
     { title: "Podcasts", href: "#podcasts" },
-    { title: "Workplace Health", href: "#workplace" },
-    { title: "Community", href: "#community" },
-    { title: "Insurance Benefits", href: "#benefits" },
+    { title: "Betriebliches Gesundheitsmanagement", href: "#workplace" },
+    { title: "Gemeinschaft", href: "#community" },
+    { title: "Versicherungsleistungen", href: "#benefits" },
   ];
 
   return (
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 gradient-primary rounded-full"></div>
-            <span className="text-xl font-bold text-gradient">MenoWell</span>
+            <span className="text-xl font-bold text-gradient">AOK PLUS</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -38,10 +38,10 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="outline" size="sm">
-              Sign In
+              Anmelden
             </Button>
             <Button size="sm" className="gradient-primary text-white">
-              Get Started
+              Jetzt starten
             </Button>
           </div>
 
@@ -70,10 +70,10 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-2 pt-4 border-t">
                 <Button variant="outline" size="sm">
-                  Sign In
+                  Anmelden
                 </Button>
                 <Button size="sm" className="gradient-primary text-white">
-                  Get Started
+                  Jetzt starten
                 </Button>
               </div>
             </div>

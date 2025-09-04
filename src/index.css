@@ -20,22 +20,22 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 233 13% 25%;
 
-    /* Primary brand colors - warm purple-blue */
-    --primary: 258 85% 66%;
+    /* AOK Plus primary colors - AOK blue */
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 258 85% 76%;
-    --primary-dark: 258 85% 56%;
+    --primary-light: 210 100% 60%;
+    --primary-dark: 210 100% 40%;
 
-    /* Secondary - soft wellness green */
-    --secondary: 162 48% 88%;
-    --secondary-foreground: 162 48% 35%;
+    /* AOK green secondary */
+    --secondary: 120 45% 50%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Muted tones */
     --muted: 220 13% 95%;
     --muted-foreground: 220 13% 55%;
 
-    /* Accent - empowering coral */
-    --accent: 14 91% 68%;
+    /* AOK accent green */
+    --accent: 120 60% 45%;
     --accent-foreground: 0 0% 100%;
 
     /* Destructive */
@@ -55,16 +55,16 @@ All colors MUST be HSL.
     --warning: 35 91% 65%;
     --warning-foreground: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(258 85% 66%), hsl(225 85% 66%));
-    --gradient-secondary: linear-gradient(135deg, hsl(162 48% 88%), hsl(162 48% 78%));
-    --gradient-hero: linear-gradient(135deg, hsl(258 85% 66%), hsl(225 85% 66%), hsl(14 91% 68%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(258 85% 98%));
+    /* AOK gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%), hsl(210 100% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(120 45% 50%), hsl(120 45% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 50%), hsl(120 45% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 100% 98%));
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(258 85% 66% / 0.1);
-    --shadow-medium: 0 8px 30px -4px hsl(258 85% 66% / 0.15);
-    --shadow-strong: 0 20px 40px -8px hsl(258 85% 66% / 0.2);
+    /* AOK shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(210 100% 50% / 0.1);
+    --shadow-medium: 0 8px 30px -4px hsl(210 100% 50% / 0.15);
+    --shadow-strong: 0 20px 40px -8px hsl(210 100% 50% / 0.2);
 
     --radius: 0.75rem;
 
@@ -98,11 +98,11 @@ All colors MUST be HSL.
     --popover: 233 13% 10%;
     --popover-foreground: 0 0% 98%;
 
-    /* Dark mode primary - lighter purple */
-    --primary: 258 85% 76%;
+    /* Dark mode AOK blue - lighter */
+    --primary: 210 100% 60%;
     --primary-foreground: 233 13% 8%;
-    --primary-light: 258 85% 86%;
-    --primary-dark: 258 85% 66%;
+    --primary-light: 210 100% 70%;
+    --primary-dark: 210 100% 50%;
 
     /* Dark mode secondary */
     --secondary: 233 13% 15%;
@@ -112,8 +112,8 @@ All colors MUST be HSL.
     --muted: 233 13% 15%;
     --muted-foreground: 233 13% 65%;
 
-    /* Dark mode accent - softer coral */
-    --accent: 14 91% 78%;
+    /* Dark mode AOK green - softer */
+    --accent: 120 60% 55%;
     --accent-foreground: 233 13% 8%;
 
     /* Dark mode destructive */
@@ -131,11 +131,11 @@ All colors MUST be HSL.
     --warning: 35 91% 75%;
     --warning-foreground: 233 13% 8%;
 
-    /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(258 85% 76%), hsl(225 85% 76%));
+    /* Dark mode AOK gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 60%), hsl(210 100% 50%));
     --gradient-secondary: linear-gradient(135deg, hsl(233 13% 15%), hsl(233 13% 20%));
-    --gradient-hero: linear-gradient(135deg, hsl(258 85% 76%), hsl(225 85% 76%), hsl(14 91% 78%));
-    --gradient-subtle: linear-gradient(180deg, hsl(233 13% 8%), hsl(258 85% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 60%), hsl(120 45% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(233 13% 8%), hsl(210 100% 12%));
 
     /* Dark mode shadows */
     --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.3);

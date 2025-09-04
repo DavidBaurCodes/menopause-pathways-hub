@@ -9,13 +9,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>MenoWell - Empowering Your Menopause Journey | Comprehensive Support & Insurance</title>
-        <meta name="description" content="Comprehensive menopause support platform offering personalized resources, workplace health management, expert content, and tailored insurance solutions for every stage of your journey." />
-        <meta name="keywords" content="menopause support, women's health, workplace wellness, menopause insurance, perimenopause, health resources" />
+        <title>AOK PLUS - Ihre Wechseljahre-Begleitung | Umfassende Unterstützung & Versicherung</title>
+        <meta name="description" content="Umfassende Wechseljahre-Unterstützungsplattform mit personalisierten Ressourcen, betrieblichem Gesundheitsmanagement, Expertenwissen und maßgeschneiderten Versicherungslösungen für jede Phase Ihrer Reise." />
+        <meta name="keywords" content="Wechseljahre Unterstützung, Frauengesundheit, betriebliches Wellness, Wechseljahre Versicherung, Perimenopause, Gesundheitsressourcen, AOK PLUS" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="MenoWell - Empowering Your Menopause Journey" />
-        <meta property="og:description" content="Comprehensive menopause support platform with personalized resources, workplace solutions, and insurance benefits." />
+        <meta property="og:title" content="AOK PLUS - Ihre Wechseljahre-Begleitung" />
+        <meta property="og:description" content="Umfassende Wechseljahre-Unterstützungsplattform mit personalisierten Ressourcen, betrieblichen Lösungen und Versicherungsleistungen." />
         <meta property="og:type" content="website" />
         
         {/* Schema.org structured data */}
@@ -23,18 +23,18 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "HealthAndBeautyBusiness",
-            "name": "MenoWell",
-            "description": "Comprehensive menopause support and insurance solutions",
-            "url": "https://menowell.com",
-            "logo": "https://menowell.com/logo.png",
+            "name": "AOK PLUS",
+            "description": "Umfassende Wechseljahre-Unterstützung und Versicherungslösungen",
+            "url": "https://aokplus-wechseljahre.de",
+            "logo": "https://aokplus-wechseljahre.de/logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "1-800-MENOWELL",
-              "contactType": "Customer Service"
+              "telephone": "0800-AOK-PLUS",
+              "contactType": "Kundenservice"
             },
             "sameAs": [
-              "https://facebook.com/menowell",
-              "https://twitter.com/menowell"
+              "https://facebook.com/aokplus",
+              "https://twitter.com/aokplus"
             ]
           })}
         </script>
@@ -49,52 +49,52 @@ const Index = () => {
           <FeatureGrid />
           
           {/* Placeholder sections for future development */}
-          <section id="knowledge" className="py-16 bg-muted/30">
+          <section id="knowledge" className="py-12 sm:py-16 bg-muted/30">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gradient">Knowledge Center</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive articles, research, and expert insights coming soon. 
-                Access evidence-based information on all aspects of menopause.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">Wissensbereich</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+                Umfassende Artikel, Forschung und Experteneinblicke kommen bald. 
+                Zugang zu evidenzbasierten Informationen zu allen Aspekten der Wechseljahre.
               </p>
             </div>
           </section>
 
-          <section id="podcasts" className="py-16 bg-background">
+          <section id="podcasts" className="py-12 sm:py-16 bg-background">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gradient">Podcasts & Media</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Expert interviews, personal stories, and workplace management guidance. 
-                Listen to inspiring content while on the go.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">Podcasts & Medien</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+                Experteninterviews, persönliche Geschichten und betriebliche Management-Anleitungen. 
+                Hören Sie inspirierende Inhalte unterwegs.
               </p>
             </div>
           </section>
 
-          <section id="workplace" className="py-16 bg-muted/30">
+          <section id="workplace" className="py-12 sm:py-16 bg-muted/30">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gradient">Workplace Health Management</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive organizational guides and individual support strategies. 
-                Create inclusive, supportive work environments for menopause transitions.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">Betriebliches Gesundheitsmanagement</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+                Umfassende Organisationsleitfäden und individuelle Unterstützungsstrategien. 
+                Schaffen Sie inklusive, unterstützende Arbeitsumgebungen für Wechseljahre-Übergänge.
               </p>
             </div>
           </section>
 
-          <section id="community" className="py-16 bg-background">
+          <section id="community" className="py-12 sm:py-16 bg-background">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gradient">Community & Support</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Connect with others sharing similar experiences. Join our supportive community 
-                for discussions, questions, and mutual encouragement.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">Gemeinschaft & Unterstützung</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+                Verbinden Sie sich mit anderen, die ähnliche Erfahrungen teilen. Treten Sie unserer 
+                unterstützenden Gemeinschaft für Diskussionen, Fragen und gegenseitige Ermutigung bei.
               </p>
             </div>
           </section>
 
-          <section id="benefits" className="py-16 bg-muted/30">
+          <section id="benefits" className="py-12 sm:py-16 bg-muted/30">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gradient">Insurance Benefits</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Exclusive insurance coverage and benefits tailored specifically for 
-                menopause-related healthcare and wellness needs.
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-gradient">Versicherungsleistungen</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+                Exklusive Versicherungsabdeckung und Leistungen, die speziell für 
+                Wechseljahre-bezogene Gesundheits- und Wellnessbedürfnisse entwickelt wurden.
               </p>
             </div>
           </section>

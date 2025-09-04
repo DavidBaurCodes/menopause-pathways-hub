@@ -4,45 +4,45 @@ import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   const quickLinks = [
-    { title: "Menopause Journey", href: "#journey" },
-    { title: "Knowledge Center", href: "#knowledge" },
+    { title: "Wechseljahre-Begleiter", href: "#journey" },
+    { title: "Wissensbereich", href: "#knowledge" },
     { title: "Podcasts", href: "#podcasts" },
-    { title: "Workplace Health", href: "#workplace" },
+    { title: "Betriebliche Gesundheit", href: "#workplace" },
   ];
 
   const supportLinks = [
-    { title: "Community Forums", href: "#community" },
-    { title: "Insurance Benefits", href: "#benefits" },
-    { title: "Contact Support", href: "#contact" },
-    { title: "Privacy Policy", href: "#privacy" },
+    { title: "Gemeinschaftsforen", href: "#community" },
+    { title: "Versicherungsleistungen", href: "#benefits" },
+    { title: "Support kontaktieren", href: "#contact" },
+    { title: "Datenschutzerklärung", href: "#privacy" },
   ];
 
   return (
     <footer className="bg-muted/30 border-t">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-8 h-8 gradient-primary rounded-full"></div>
-              <span className="text-xl font-bold text-gradient">MenoWell</span>
+              <span className="text-xl font-bold text-gradient">AOK PLUS</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Empowering individuals and workplaces with comprehensive menopause support, 
-              resources, and insurance solutions for every stage of the journey.
+              Wir unterstützen Einzelpersonen und Arbeitsplätze mit umfassendem Wechseljahre-Support, 
+              Ressourcen und Versicherungslösungen für jede Phase der Reise.
             </p>
             
             {/* Newsletter Signup */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Stay Connected</h4>
-              <div className="flex gap-2 max-w-sm">
+              <h4 className="font-semibold">In Verbindung bleiben</h4>
+              <div className="flex flex-col sm:flex-row gap-2 max-w-sm">
                 <Input 
                   type="email" 
-                  placeholder="Enter your email"
+                  placeholder="E-Mail eingeben"
                   className="flex-1"
                 />
-                <Button className="gradient-primary text-white">
-                  Subscribe
+                <Button className="gradient-primary text-white w-full sm:w-auto">
+                  Abonnieren
                 </Button>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Schnelllinks</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.title}>
@@ -67,7 +67,7 @@ const Footer = () => {
 
           {/* Support Links */}
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="font-semibold mb-4">Unterstützung</h4>
             <ul className="space-y-3">
               {supportLinks.map((link) => (
                 <li key={link.title}>
@@ -84,15 +84,15 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="border-t pt-8 mb-8">
-          <div className="grid md:grid-cols-3 gap-6">
+        <div className="border-t pt-6 sm:pt-8 mb-6 sm:mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Phone className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="font-medium">Call Us</div>
-                <div className="text-sm text-muted-foreground">1-800-MENOWELL</div>
+                <div className="font-medium">Rufen Sie uns an</div>
+                <div className="text-sm text-muted-foreground">0800-AOK-PLUS</div>
               </div>
             </div>
             
@@ -101,8 +101,8 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="font-medium">Email Us</div>
-                <div className="text-sm text-muted-foreground">support@menowell.com</div>
+                <div className="font-medium">E-Mail</div>
+                <div className="text-sm text-muted-foreground">wechseljahre@aokplus.de</div>
               </div>
             </div>
             
@@ -111,23 +111,23 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <div className="font-medium">Visit Us</div>
-                <div className="text-sm text-muted-foreground">Health & Wellness Center</div>
+                <div className="font-medium">Besuchen Sie uns</div>
+                <div className="text-sm text-muted-foreground">Gesundheitszentrum</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-sm text-muted-foreground">
-            © 2024 MenoWell Insurance Solutions. All rights reserved.
+        <div className="border-t pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-sm text-muted-foreground text-center md:text-left">
+            © 2024 AOK PLUS. Alle Rechte vorbehalten.
           </div>
           
           <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-            <span>Made with</span>
+            <span>Gemacht mit</span>
             <Heart className="w-4 h-4 text-accent fill-current" />
-            <span>for women's health</span>
+            <span>für Frauengesundheit</span>
           </div>
         </div>
       </div>
