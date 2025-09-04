@@ -347,7 +347,7 @@ const FeatureGrid = () => {
               <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
                 Entdecken Sie verschiedene Wege, um mehr über die Wechseljahre zu erfahren und sich mit unserer Community zu vernetzen.
               </p>
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5">
+              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5 hover:text-black">
                 Alle Kanäle entdecken
               </Button>
             </div>
