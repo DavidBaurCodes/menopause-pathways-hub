@@ -29,6 +29,8 @@ import Hormontherapie from "./pages/Hormontherapie";
 import Allies from "./pages/Allies";
 import Arbeitskultur from "./pages/Arbeitskultur";
 import Berufsalltag from "./pages/Berufsalltag";
+import Medien from "./pages/Medien";
+import AOKPlus from "./pages/AOKPlus";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -68,6 +70,8 @@ const App = () => (
                   <Route path="/allies" element={<Allies />} />
                   <Route path="/arbeitskultur" element={<Arbeitskultur />} />
                   <Route path="/berufsalltag" element={<Berufsalltag />} />
+                  <Route path="/medien" element={<Medien />} />
+                  <Route path="/aok-plus" element={<AOKPlus />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

@@ -106,7 +106,7 @@ const FeatureGrid = () => {
       icon: <Headphones className="w-8 h-8" />,
       title: "Medien", 
       description: "Noch Fragen - Wir haben weiterführende Antworten: Blogs, Videos, Podcast, Literatur-Empfehlungen, LinkedIn-Posts, Socialmedia-Kanäle, Telefonberatung und Plakate.",
-      href: "#media-channels",
+      href: "/medien",
       color: "text-primary"
     }
   ];
@@ -116,7 +116,7 @@ const FeatureGrid = () => {
       icon: <Shield className="w-8 h-8" />,
       title: "Meine AOK PLUS",
       description: "Exklusive Leistungen für Wechseljahre-Gesundheit.",
-      href: "#benefits",
+      href: "/aok-plus",
       color: "text-warning"
     }
   ];
