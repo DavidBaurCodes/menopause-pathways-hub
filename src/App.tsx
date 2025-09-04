@@ -11,6 +11,8 @@ import Assessment from "./pages/Assessment";
 import Lexicon from "./pages/Lexicon";
 import Knowledge from "./pages/Knowledge";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import BlogCategory from "./pages/BlogCategory";
 import Lifehacks from "./pages/Lifehacks";
 import Podcasts from "./pages/Podcasts";
 import Workplace from "./pages/Workplace";
@@ -37,6 +39,8 @@ const App = () => (
                   <Route path="/lexicon" element={<Lexicon />} />
                   <Route path="/knowledge" element={<Knowledge />} />
                   <Route path="/blog" element={<Blog />} />
+                  <Route path="/blog/:slug" element={<BlogPost />} />
+                  <Route path="/blog/category/:category" element={<BlogCategory />} />
                   <Route path="/lifehacks" element={<Lifehacks />} />
                   <Route path="/podcasts" element={<Podcasts />} />
                   <Route path="/workplace" element={<Workplace />} />
