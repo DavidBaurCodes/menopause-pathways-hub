@@ -75,7 +75,7 @@ const FeatureGrid = () => {
       title: "Psyche",
       description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung.",
       href: "/psyche",
-      color: "text-warning"
+      color: "text-primary"
     }
   ];
 
@@ -92,14 +92,14 @@ const FeatureGrid = () => {
       title: "Life Hacks - Tipps",
       description: "Von Brainfog bis Hitzewallungen: Entdecke clevere Alltagstipps und Strategien, die dir helfen, dich wieder wohl in deinem Körper zu fühlen.",
       href: "/lifehacks",
-      color: "text-success"
+      color: "text-primary"
     },
     {
       icon: <HandHeart className="w-8 h-8" />,
       title: "Allies - Partner",
       description: "Informationen und Ressourcen für Partner, Familie, Freunde und Arbeitgebende von betroffenen Frauen.",
       href: "/allies",
-      color: "text-warning"
+      color: "text-primary"
     }
   ];
 
@@ -136,7 +136,7 @@ const FeatureGrid = () => {
       title: "Meine AOK PLUS",
       description: "Exklusive Leistungen für Wechseljahre-Gesundheit.",
       href: "/aok-plus",
-      color: "text-warning"
+      color: "text-primary"
     }
   ];
 
