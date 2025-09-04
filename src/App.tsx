@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Assessment from "./pages/Assessment";
 import Lexicon from "./pages/Lexicon";
 import Knowledge from "./pages/Knowledge";
+import Blog from "./pages/Blog";
+import Lifehacks from "./pages/Lifehacks";
 import Podcasts from "./pages/Podcasts";
 import Workplace from "./pages/Workplace";
 import Community from "./pages/Community";
@@ -28,6 +30,8 @@ const App = () => (
             <Route path="/assessment" element={<Assessment />} />
             <Route path="/lexicon" element={<Lexicon />} />
             <Route path="/knowledge" element={<Knowledge />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/lifehacks" element={<Lifehacks />} />
             <Route path="/podcasts" element={<Podcasts />} />
             <Route path="/workplace" element={<Workplace />} />
             <Route path="/community" element={<Community />} />

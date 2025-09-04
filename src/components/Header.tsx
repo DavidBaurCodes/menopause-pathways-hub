@@ -10,6 +10,8 @@ const Header = () => {
     { title: "Assessment", href: "/assessment" },
     { title: "Lexikon", href: "/lexicon" },
     { title: "Wissen", href: "/knowledge" },
+    { title: "Blog", href: "/blog" },
+    { title: "Lifehacks", href: "/lifehacks" },
     { title: "Medien", href: "/podcasts" },
     { title: "Arbeitsplatz", href: "/workplace" },
     { title: "Community", href: "/community" },
