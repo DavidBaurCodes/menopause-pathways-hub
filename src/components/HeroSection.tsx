@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/meno-ladies-new-2.webp";
 const HeroSection = () => {
   return <section className="relative min-h-[80vh] flex items-center gradient-subtle">
       <div className="container mx-auto px-4 py-12">
