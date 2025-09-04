@@ -15,7 +15,8 @@ const Lifehacks = () => {
       category: "Energie",
       difficulty: "Einfach",
       time: "5 Min",
-      icon: <Coffee className="w-5 h-5" />
+      icon: <Coffee className="w-5 h-5" />,
+      url: "/blog/5-minuten-morgen-boost-wechseljahre"
     },
     {
       title: "Hitzewellen clever überstehen",
@@ -23,7 +24,8 @@ const Lifehacks = () => {
       category: "Symptome",
       difficulty: "Einfach", 
       time: "Sofort",
-      icon: <Heart className="w-5 h-5" />
+      icon: <Heart className="w-5 h-5" />,
+      url: "/blog/hitzewallungen-tipps-alltag"
     },
     {
       title: "Schlaf-Routine optimieren",
@@ -31,7 +33,8 @@ const Lifehacks = () => {
       category: "Schlaf",
       difficulty: "Mittel",
       time: "30 Min",
-      icon: <Moon className="w-5 h-5" />
+      icon: <Moon className="w-5 h-5" />,
+      url: "/blog/schlaf-routine-wechseljahre-optimieren"
     },
     {
       title: "Krafttraining in 15 Minuten",
@@ -39,7 +42,8 @@ const Lifehacks = () => {
       category: "Fitness",
       difficulty: "Mittel",
       time: "15 Min",
-      icon: <Dumbbell className="w-5 h-5" />
+      icon: <Dumbbell className="w-5 h-5" />,
+      url: "/blog/krafttraining-15-minuten-wechseljahre"
     },
     {
       title: "Stimmungsschwankungen meistern",
@@ -47,7 +51,8 @@ const Lifehacks = () => {
       category: "Mental",
       difficulty: "Einfach",
       time: "2 Min",
-      icon: <Heart className="w-5 h-5" />
+      icon: <Heart className="w-5 h-5" />,
+      url: "/blog/stimmungsschwankungen-wechseljahre-meistern"
     },
     {
       title: "Nährstoff-Booster für zwischendurch",
@@ -55,7 +60,8 @@ const Lifehacks = () => {
       category: "Ernährung",
       difficulty: "Einfach",
       time: "10 Min",
-      icon: <Coffee className="w-5 h-5" />
+      icon: <Coffee className="w-5 h-5" />,
+      url: "/blog/naehrstoff-booster-hormonhaushalt"
     }
   ];
 
@@ -66,7 +72,8 @@ const Lifehacks = () => {
       category: "Flexibilität",
       difficulty: "Mittel",
       time: "1 Monat",
-      icon: <Building2 className="w-5 h-5" />
+      icon: <Building2 className="w-5 h-5" />,
+      url: "/blog/flexible-arbeitszeiten-wechseljahre-unternehmen"
     },
     {
       title: "Menopause-freundliche Büroausstattung",
@@ -74,7 +81,8 @@ const Lifehacks = () => {
       category: "Arbeitsplatz",
       difficulty: "Einfach",
       time: "1 Woche",
-      icon: <Target className="w-5 h-5" />
+      icon: <Target className="w-5 h-5" />,
+      url: "/blog/menopause-freundliche-bueroausstattung"
     },
     {
       title: "Sensibilisierungs-Workshop organisieren",
@@ -82,7 +90,8 @@ const Lifehacks = () => {
       category: "Schulung",
       difficulty: "Mittel", 
       time: "2 Wochen",
-      icon: <Users className="w-5 h-5" />
+      icon: <Users className="w-5 h-5" />,
+      url: "/blog/wechseljahre-workshop-unternehmen-organisieren"
     },
     {
       title: "Gesundheitsleistungen erweitern",
@@ -90,7 +99,8 @@ const Lifehacks = () => {
       category: "Benefits",
       difficulty: "Schwer",
       time: "3 Monate",
-      icon: <TrendingUp className="w-5 h-5" />
+      icon: <TrendingUp className="w-5 h-5" />,
+      url: "/blog/gesundheitsleistungen-wechseljahre-benefits"
     },
     {
       title: "Peer-Support-Netzwerk aufbauen",
@@ -98,7 +108,8 @@ const Lifehacks = () => {
       category: "Community",
       difficulty: "Mittel",
       time: "6 Wochen",
-      icon: <Users className="w-5 h-5" />
+      icon: <Users className="w-5 h-5" />,
+      url: "/blog/peer-support-netzwerk-wechseljahre-aufbauen"
     },
     {
       title: "Führungskräfte-Schulung kompakt",
@@ -106,7 +117,8 @@ const Lifehacks = () => {
       category: "Leadership",
       difficulty: "Einfach",
       time: "30 Min",
-      icon: <Target className="w-5 h-5" />
+      icon: <Target className="w-5 h-5" />,
+      url: "/blog/fuehrungskraefte-schulung-wechseljahre"
     }  
   ];
 
@@ -214,9 +226,11 @@ const Lifehacks = () => {
                           <CardDescription className="leading-relaxed">
                             {hack.description}
                           </CardDescription>
-                          <Button size="sm" className="w-full gradient-primary text-white group/try">
-                            <CheckCircle className="w-4 h-4 mr-2" />
-                            Jetzt ausprobieren
+                          <Button size="sm" className="w-full gradient-primary text-white group/try" asChild>
+                            <a href={hack.url}>
+                              <CheckCircle className="w-4 h-4 mr-2" />
+                              Jetzt ausprobieren
+                            </a>
                           </Button>
                         </CardContent>
                       </Card>
@@ -262,9 +276,11 @@ const Lifehacks = () => {
                           <CardDescription className="leading-relaxed">
                             {hack.description}
                           </CardDescription>
-                          <Button size="sm" className="w-full gradient-primary text-white group/implement">
-                            <Target className="w-4 h-4 mr-2" />
-                            Umsetzen
+                          <Button size="sm" className="w-full gradient-primary text-white group/implement" asChild>
+                            <a href={hack.url}>
+                              <Target className="w-4 h-4 mr-2" />
+                              Umsetzen
+                            </a>
                           </Button>
                         </CardContent>
                       </Card>
