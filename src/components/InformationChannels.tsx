@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageCircle, Linkedin, FileText, Calendar, BookOpen, Mail } from "lucide-react";
+import { HeartChatIcon, DocumentEditIcon, ChartPlusIcon, GiftHandsIcon } from "@/components/ui/logo";
 
 const InformationChannels = () => {
   const channels = [
     {
       title: "WhatsApp",
       description: "Schnelle Beratung und Support",
-      icon: MessageCircle,
+      icon: HeartChatIcon,
       action: "Jetzt kontaktieren",
       href: "https://wa.me/491234567890",
       color: "text-green-600"
@@ -31,7 +32,7 @@ const InformationChannels = () => {
     {
       title: "Flyer anfordern",
       description: "Informationsmaterial bestellen",
-      icon: FileText,
+      icon: DocumentEditIcon,
       action: "Anfordern",
       href: "/flyer-request",
       color: "text-purple-600"
@@ -39,7 +40,7 @@ const InformationChannels = () => {
     {
       title: "Schulungen & Präsentationen",
       description: "Kommende Termine und Events",
-      icon: Calendar,
+      icon: ChartPlusIcon,
       action: "Termine anzeigen",
       href: "/events",
       color: "text-orange-600"
@@ -47,7 +48,7 @@ const InformationChannels = () => {
     {
       title: "Buchempfehlungen",
       description: "Expertenwissen zum Nachlesen",
-      icon: BookOpen,
+      icon: GiftHandsIcon,
       action: "Bücher entdecken",
       href: "/books",
       color: "text-indigo-600"
