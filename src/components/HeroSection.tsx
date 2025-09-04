@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
+               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed tracking-wide">
                  <span className="text-gradient">
                    Deine Begleitung<br />
                    in den Wechseljahren.
