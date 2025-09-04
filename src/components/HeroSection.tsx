@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Ihre{" "}
+                Deine{" "}
                 <span className="text-gradient">Wechseljahre</span>{" "}
                 begleiten wir
               </h1>

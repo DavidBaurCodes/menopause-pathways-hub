@@ -137,7 +137,7 @@ const HealthLexicon = () => {
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
             Verständliche Erklärungen wichtiger Begriffe rund um die Wechseljahre. 
-            Medizinisches Wissen einfach erklärt für besseres Verständnis Ihrer Gesundheit.
+            Medizinisches Wissen einfach erklärt für besseres Verständnis deiner Gesundheit.
           </p>
         </div>
 
@@ -147,7 +147,7 @@ const HealthLexicon = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
             <Input
               type="text"
-              placeholder="Suchen Sie nach Begriffen, Symptomen oder Behandlungen..."
+              placeholder="Suche nach Begriffen, Symptomen oder Behandlungen..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10 py-3 text-base"
@@ -223,7 +223,7 @@ const HealthLexicon = () => {
             <BookOpen className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
             <h3 className="text-lg font-medium mb-2">Keine Einträge gefunden</h3>
             <p className="text-muted-foreground">
-              Versuchen Sie einen anderen Suchbegriff oder wählen Sie eine andere Kategorie.
+              Probiere einen anderen Suchbegriff oder wähle eine andere Kategorie.
             </p>
           </div>
         )}
@@ -232,11 +232,11 @@ const HealthLexicon = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8 md:p-12 max-w-4xl mx-auto">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-              Haben Sie weitere Fragen?
+              Hast du weitere Fragen?
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-              Unser medizinisches Experten-Netzwerk steht Ihnen für persönliche Beratung zur Verfügung. 
-              Finden Sie qualifizierte Ärzte in Ihrer Nähe.
+              Unser medizinisches Experten-Netzwerk steht dir für persönliche Beratung zur Verfügung. 
+              Finde qualifizierte Ärzte in deiner Nähe.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto">

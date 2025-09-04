@@ -15,7 +15,7 @@ const PersonalizedJourney = () => {
   const questions = [
     {
       id: "age",
-      title: "Wie alt sind Sie?",
+      title: "Wie alt bist du?",
       type: "single",
       options: [
         { value: "35-40", label: "35-40 Jahre" },
@@ -27,7 +27,7 @@ const PersonalizedJourney = () => {
     },
     {
       id: "symptoms",
-      title: "Welche Symptome erleben Sie? (Mehrfachauswahl möglich)",
+      title: "Welche Symptome erlebst du? (Mehrfachauswahl möglich)",
       type: "multiple",
       options: [
         { value: "irregular-periods", label: "Unregelmäßige Periode" },
@@ -43,7 +43,7 @@ const PersonalizedJourney = () => {
     },
     {
       id: "stage",
-      title: "Welche Phase beschreibt Sie am besten?",
+      title: "Welche Phase beschreibt dich am besten?",
       type: "single",
       options: [
         { value: "pre", label: "Prämenopause (regelmäßige Periode)" },
@@ -91,7 +91,7 @@ const PersonalizedJourney = () => {
       recommendations.push({
         icon: <Calendar className="w-6 h-6" />,
         title: "Zyklusverfolgung",
-        description: "Beginnen Sie mit der Beobachtung von Veränderungen Ihres Zyklus zur Vorbereitung auf die Perimenopause.",
+        description: "Beginne mit der Beobachtung von Veränderungen deines Zyklus zur Vorbereitung auf die Perimenopause.",
       });
     }
 
@@ -99,7 +99,7 @@ const PersonalizedJourney = () => {
       recommendations.push({
         icon: <Heart className="w-6 h-6" />,
         title: "Lebensführung",
-        description: "Entdecken Sie Kühlungstechniken, Schlafhygiene und Stressabbau-Strategien.",
+        description: "Entdecke Kühlungstechniken, Schlafhygiene und Stressabbau-Strategien.",
       });
     }
 
@@ -107,7 +107,7 @@ const PersonalizedJourney = () => {
       recommendations.push({
         icon: <Brain className="w-6 h-6" />,
         title: "Kognitive Gesundheit",
-        description: "Lernen Sie über Gehirnnebel, Gedächtnisunterstützung und psychische Gesundheit in den Wechseljahren.",
+        description: "Lerne über Gehirnnebel, Gedächtnisunterstützung und psychische Gesundheit in den Wechseljahren.",
       });
     }
 
@@ -133,10 +133,10 @@ const PersonalizedJourney = () => {
               <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center text-white px-6">
                 <Sparkles className="w-12 h-12 mb-4 text-white" />
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-                  Ihr Weg ist einzigartig!
+                  Dein Weg ist einzigartig!
                 </h2>
                 <p className="text-lg sm:text-xl max-w-2xl opacity-90">
-                  Basierend auf Ihren Antworten - maßgeschneiderte Empfehlungen für Ihre Wechseljahre
+                  Basierend auf deinen Antworten - maßgeschneiderte Empfehlungen für deine Wechseljahre
                 </p>
               </div>
             </div>
@@ -174,7 +174,7 @@ const PersonalizedJourney = () => {
                 Bereit für konkrete Schritte?
               </h3>
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Entdecken Sie praktische Lifehacks und bewährte Strategien, die sofort umsetzbar sind.
+                Entdecke praktische Lifehacks und bewährte Strategien, die sofort umsetzbar sind.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -215,10 +215,10 @@ const PersonalizedJourney = () => {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
-              Entdecken Sie Ihre <span className="text-gradient">Wechseljahre-Begleitung</span>
+              Entdecke deine <span className="text-gradient">Wechseljahre-Begleitung</span>
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground px-4">
-              Machen Sie unser kurzes Assessment für personalisierte Ressourcen und Unterstützung
+              Mache unser kurzes Assessment für personalisierte Ressourcen und Unterstützung
             </p>
           </div>
 

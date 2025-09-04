@@ -35,7 +35,7 @@ const FeatureGrid = () => {
     {
       icon: <Stethoscope className="w-8 h-8" />,
       title: "Medizinische Experten",
-      description: "Finden Sie qualifizierte Fachärzte und Therapeuten für Frauengesundheit in Ihrer Nähe.",
+      description: "Finde qualifizierte Fachärzte und Therapeuten für Frauengesundheit in deiner Nähe.",
       href: "/medical-experts",
       color: "text-primary"
     },
@@ -66,7 +66,7 @@ const FeatureGrid = () => {
     {
       icon: <Flower2 className="w-8 h-8" />,
       title: "Wellness",
-      description: "Me-Time Strategien, Stressbewältigung und Achtsamkeits-Apps für Ihr Wohlbefinden.",
+      description: "Me-Time Strategien, Stressbewältigung und Achtsamkeits-Apps für dein Wohlbefinden.",
       href: "/wellness",
       color: "text-accent"
     },
@@ -83,7 +83,7 @@ const FeatureGrid = () => {
     {
       icon: <CommunityIcon className="w-8 h-8" />,
       title: "Community",
-      description: "Verbinden Sie sich mit Gleichgesinnten, teilen Sie Erfahrungen und bauen Sie unterstützende Netzwerke auf.",
+      description: "Verbinde dich mit Gleichgesinnten, teile Erfahrungen und baue unterstützende Netzwerke auf.",
       href: "/community",
       color: "text-primary"
     },
@@ -145,11 +145,11 @@ const FeatureGrid = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 px-4">
-            Alles was Sie für Ihre <span className="text-gradient">Wechseljahre-Begleitung</span> brauchen
+            Alles was du für deine <span className="text-gradient">Wechseljahre-Begleitung</span> brauchst
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Von personalisierten Bewertungen bis hin zur betrieblichen Unterstützung bieten wir 
-            umfassende Ressourcen, die Sie durch jede Phase der Wechseljahre stärken.
+            umfassende Ressourcen, die dich durch jede Phase der Wechseljahre stärken.
           </p>
         </div>
 
@@ -273,7 +273,7 @@ const FeatureGrid = () => {
                 Bereit zu starten?
               </h4>
               <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
-                Schließen Sie sich tausenden von Frauen an, die durch unsere umfassenden Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
+                Schließe dich tausenden von Frauen an, die durch unsere umfassenden Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
               </p>
               <Button size="sm" className="gradient-primary text-white shadow-medium" asChild>
                 <a href="/community">Community beitreten</a>
@@ -364,7 +364,7 @@ const FeatureGrid = () => {
                 Weitere Informationskanäle
               </h4>
               <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
-                Entdecken Sie verschiedene Wege, um mehr über die Wechseljahre zu erfahren und sich mit unserer Community zu vernetzen.
+                Entdecke verschiedene Wege, um mehr über die Wechseljahre zu erfahren und dich mit unserer Community zu vernetzen.
               </p>
               <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5 hover:text-black">
                 Alle Kanäle entdecken
@@ -415,11 +415,11 @@ const FeatureGrid = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8 md:p-12">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-              Ihre Wechseljahre-Reise beginnt hier
+              Deine Wechseljahre-Reise beginnt hier
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-              Entdecken Sie maßgeschneiderte Unterstützung, fachkundige Beratung und eine starke Gemeinschaft, 
-              die Sie auf Ihrem Weg durch die Wechseljahre begleitet.
+              Entdecke maßgeschneiderte Unterstützung, fachkundige Beratung und eine starke Gemeinschaft, 
+              die dich auf deinem Weg durch die Wechseljahre begleitet.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto" asChild>
