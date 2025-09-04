@@ -12,27 +12,95 @@ import {
 } from "lucide-react";
 
 const FeatureGrid = () => {
-  const features = [
+  const healthFeatures = [
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Wissensbereich",
-      description: "Evidenzbasierte Artikel, Forschungsstudien und Expertenwissen zu allen Aspekten der Wechseljahre.",
-      href: "#knowledge",
-      color: "text-accent"
-    },
-    {
-      icon: <Headphones className="w-8 h-8" />,
-      title: "Podcasts & Medien", 
-      description: "Experteninterviews, persönliche Geschichten und Workplace-Management-Anleitungen im Audioformat.",
-      href: "#podcasts",
+      title: "Medizinische Experten",
+      description: "Qualifizierte Gynäkologen, Dermatologen, Kardiologen, HNO-Ärzte und Osteopathen in Ihrer Nähe.",
+      href: "#medical-experts",
       color: "text-primary"
     },
     {
-      icon: <Briefcase className="w-8 h-8" />,
-      title: "Betriebliche Gesundheit",
-      description: "Umfassende Leitfäden für Unternehmen zur Unterstützung von Mitarbeitern in den Wechseljahren.",
-      href: "#workplace", 
+      icon: <Zap className="w-8 h-8" />,
+      title: "Hormontherapie & Telemedizin",
+      description: "Umfassende Beratung zu Hormonbehandlungen und digitale Gesundheitsdienste für flexible Betreuung.",
+      href: "#hormone-therapy",
+      color: "text-accent"
+    }
+  ];
+
+  const lifestyleFeatures = [
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Virtuelle Sportgruppen",
+      description: "Online-Fitnesskurse und Sportgruppen speziell für Frauen in den Wechseljahren.",
+      href: "#virtual-sports",
       color: "text-success"
+    },
+    {
+      icon: <Heart className="w-8 h-8" />,
+      title: "Ernährung & Wellness",
+      description: "Persönliche Ernährungsberatung, Sport-Programme und Me-Time Strategien für Ihr Wohlbefinden.",
+      href: "#nutrition-wellness",
+      color: "text-primary-light"
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      title: "Psyche & Präventivgesetz",
+      description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung nach dem Präventivgesetz.",
+      href: "#mental-health",
+      color: "text-accent"
+    }
+  ];
+
+  const communityFeatures = [
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Community & Peer Groups",
+      description: "Verbinden Sie sich mit Gleichgesinnten, teilen Sie Erfahrungen und bauen Sie unterstützende Netzwerke auf.",
+      href: "#community-building",
+      color: "text-primary"
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Life Hacks & Tipps",
+      description: "Praktische Lösungen bei Brainfog, Alltagstipps und bewährte Strategien für den Umgang mit Wechseljahren.",
+      href: "#life-hacks",
+      color: "text-success"
+    },
+    {
+      icon: <Heart className="w-8 h-8" />,
+      title: "Allies & Partner",
+      description: "Informationen und Ressourcen für Partner, Familie und Freunde von betroffenen Frauen.",
+      href: "#allies",
+      color: "text-warning"
+    }
+  ];
+
+  const workplaceFeatures = [
+    {
+      icon: <Briefcase className="w-8 h-8" />,
+      title: "Betriebliche Wellness-Hacks",
+      description: "Bean Bags, Ruheräume, Home-Office-Lösungen und spezielle Office Hours für Wechseljahre-Themen.",
+      href: "#workplace-hacks", 
+      color: "text-primary-light"
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "CARE-Arbeit & Balance",
+      description: "Strategien zum Umgang mit Care-Arbeit während der Wechseljahre und Work-Life-Balance.",
+      href: "#care-work",
+      color: "text-accent"
+    }
+  ];
+
+  const mediaFeatures = [
+    {
+      icon: <Headphones className="w-8 h-8" />,
+      title: "Vielfältige Medienkanäle", 
+      description: "Blogs, LinkedIn-Posts, WhatsApp-Kanäle, Telefonberatung, Plakate und Buchempfehlungen.",
+      href: "#media-channels",
+      color: "text-primary"
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -40,20 +108,6 @@ const FeatureGrid = () => {
       description: "Maßgeschneiderte Versicherungsoptionen und exklusive Leistungen für Wechseljahre-Gesundheit.",
       href: "#benefits",
       color: "text-warning"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Gemeinschaftsunterstützung",
-      description: "Vernetzen Sie sich mit anderen, teilen Sie Erfahrungen und finden Sie Unterstützung in unserer Gemeinschaft.",
-      href: "#community",
-      color: "text-primary-light"
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Personalisierte Tools",
-      description: "Interaktive Bewertungen und maßgeschneiderte Ressourcen basierend auf Ihrer individuellen Wechseljahre-Reise.",
-      href: "#journey",
-      color: "text-accent"
     }
   ];
 
@@ -70,37 +124,189 @@ const FeatureGrid = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {features.map((feature, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
-            >
-              <CardHeader className="pb-4">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
-                  {feature.icon}
-                </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {feature.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <CardDescription className="text-base leading-relaxed">
-                  {feature.description}
-                </CardDescription>
-                <Button 
-                  variant="ghost" 
-                  className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
-                  asChild
-                >
-                  <a href={feature.href}>
-                    Mehr erfahren 
-                    <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Medizinische Unterstützung */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Medizinische Unterstützung</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+            {healthFeatures.map((feature, index) => (
+              <Card 
+                key={`health-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Lifestyle & Wellness */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Lifestyle & Wellness</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {lifestyleFeatures.map((feature, index) => (
+              <Card 
+                key={`lifestyle-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Community & Unterstützung */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Community & Unterstützung</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {communityFeatures.map((feature, index) => (
+              <Card 
+                key={`community-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Betriebliche Lösungen */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Betriebliche Lösungen</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+            {workplaceFeatures.map((feature, index) => (
+              <Card 
+                key={`workplace-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Medien & Versicherung */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Medien & Versicherung</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+            {mediaFeatures.map((feature, index) => (
+              <Card 
+                key={`media-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Call to action */}
