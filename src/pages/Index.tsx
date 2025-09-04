@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PersonalizedJourney from "@/components/PersonalizedJourney";
 import FeatureGrid from "@/components/FeatureGrid";
+import HealthLexicon from "@/components/HealthLexicon";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -47,6 +48,7 @@ const Index = () => {
           <HeroSection />
           <PersonalizedJourney />
           <FeatureGrid />
+          <HealthLexicon />
           
           {/* Placeholder sections for future development */}
           <section id="knowledge" className="py-12 sm:py-16 bg-muted/30">

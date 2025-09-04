@@ -7,6 +7,7 @@ const Header = () => {
 
   const menuItems = [
     { title: "Wechseljahre-Begleiter", href: "#journey" },
+    { title: "Gesundheitslexikon", href: "#health-lexicon" },
     { title: "Wissensbereich", href: "#knowledge" },
     { title: "Podcasts", href: "#podcasts" },
     { title: "Betriebliches Gesundheitsmanagement", href: "#workplace" },

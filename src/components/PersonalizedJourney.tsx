@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { ArrowRight, Heart, Brain, Calendar } from "lucide-react";
 
@@ -14,6 +15,7 @@ const PersonalizedJourney = () => {
     {
       id: "age",
       title: "Wie alt sind Sie?",
+      type: "single",
       options: [
         { value: "35-40", label: "35-40 Jahre" },
         { value: "41-45", label: "41-45 Jahre" },
@@ -24,18 +26,24 @@ const PersonalizedJourney = () => {
     },
     {
       id: "symptoms",
-      title: "Welche Symptome erleben Sie?",
+      title: "Welche Symptome erleben Sie? (Mehrfachauswahl möglich)",
+      type: "multiple",
       options: [
         { value: "irregular-periods", label: "Unregelmäßige Periode" },
         { value: "hot-flashes", label: "Hitzewallungen" },
         { value: "sleep-issues", label: "Schlafprobleme" },
         { value: "mood-changes", label: "Stimmungsschwankungen" },
+        { value: "brain-fog", label: "Gedächtnisprobleme/Brainfog" },
+        { value: "weight-gain", label: "Gewichtszunahme" },
+        { value: "joint-pain", label: "Gelenkschmerzen" },
+        { value: "dry-skin", label: "Trockene Haut/Haare" },
         { value: "none-yet", label: "Noch keine Symptome" },
       ],
     },
     {
       id: "stage",
       title: "Welche Phase beschreibt Sie am besten?",
+      type: "single",
       options: [
         { value: "pre", label: "Prämenopause (regelmäßige Periode)" },
         { value: "peri", label: "Perimenopause (unregelmäßige Periode)" },
@@ -48,6 +56,19 @@ const PersonalizedJourney = () => {
 
   const handleAnswer = (questionId: string, value: string) => {
     setAnswers({ ...answers, [questionId]: value });
+  };
+
+  const handleMultipleAnswer = (questionId: string, value: string, checked: boolean) => {
+    const currentAnswers = answers[questionId] ? answers[questionId].split(',') : [];
+    let newAnswers;
+    
+    if (checked) {
+      newAnswers = [...currentAnswers, value];
+    } else {
+      newAnswers = currentAnswers.filter(answer => answer !== value);
+    }
+    
+    setAnswers({ ...answers, [questionId]: newAnswers.join(',') });
   };
 
   const nextStep = () => {
@@ -178,19 +199,43 @@ const PersonalizedJourney = () => {
             </CardHeader>
             
             <CardContent className="space-y-6">
-              <RadioGroup
-                value={answers[currentQuestion.id] || ""}
-                onValueChange={(value) => handleAnswer(currentQuestion.id, value)}
-              >
-                {currentQuestion.options.map((option) => (
-                  <div key={option.value} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                    <RadioGroupItem value={option.value} id={option.value} />
-                    <Label htmlFor={option.value} className="cursor-pointer flex-1 text-sm sm:text-base">
-                      {option.label}
-                    </Label>
-                  </div>
-                ))}
-              </RadioGroup>
+              {currentQuestion.type === "single" ? (
+                <RadioGroup
+                  value={answers[currentQuestion.id] || ""}
+                  onValueChange={(value) => handleAnswer(currentQuestion.id, value)}
+                >
+                  {currentQuestion.options.map((option) => (
+                    <div key={option.value} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <RadioGroupItem value={option.value} id={option.value} />
+                      <Label htmlFor={option.value} className="cursor-pointer flex-1 text-sm sm:text-base">
+                        {option.label}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              ) : (
+                <div className="space-y-3">
+                  {currentQuestion.options.map((option) => {
+                    const currentAnswers = answers[currentQuestion.id] ? answers[currentQuestion.id].split(',') : [];
+                    const isChecked = currentAnswers.includes(option.value);
+                    
+                    return (
+                      <div key={option.value} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                        <Checkbox
+                          id={option.value}
+                          checked={isChecked}
+                          onCheckedChange={(checked) => 
+                            handleMultipleAnswer(currentQuestion.id, option.value, checked as boolean)
+                          }
+                        />
+                        <Label htmlFor={option.value} className="cursor-pointer flex-1 text-sm sm:text-base">
+                          {option.label}
+                        </Label>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
 
               <div className="flex flex-col sm:flex-row justify-between gap-3 pt-6">
                 <Button
