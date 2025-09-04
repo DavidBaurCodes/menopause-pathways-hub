@@ -25,6 +25,7 @@ import Bewegung from "./pages/Bewegung";
 import Ernaehrung from "./pages/Ernaehrung";
 import Wellness from "./pages/Wellness";
 import Psyche from "./pages/Psyche";
+import Hormontherapie from "./pages/Hormontherapie";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -60,6 +61,7 @@ const App = () => (
                   <Route path="/ernaehrung" element={<Ernaehrung />} />
                   <Route path="/wellness" element={<Wellness />} />
                   <Route path="/psyche" element={<Psyche />} />
+                  <Route path="/hormontherapie" element={<Hormontherapie />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

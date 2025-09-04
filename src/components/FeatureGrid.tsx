@@ -24,7 +24,7 @@ const FeatureGrid = () => {
       icon: <Zap className="w-8 h-8" />,
       title: "Hormontherapie & Telemedizin",
       description: "Umfassende Beratung zu Hormonbehandlungen und digitale Gesundheitsdienste für flexible Betreuung.",
-      href: "#hormone-therapy",
+      href: "/hormontherapie",
       color: "text-accent"
     }
   ];
