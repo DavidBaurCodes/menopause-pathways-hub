@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { title: "Wechseljahre-Begleiter", href: "#journey" },
-    { title: "Gesundheitslexikon", href: "#health-lexicon" },
-    { title: "Wissensbereich", href: "#knowledge" },
-    { title: "Podcasts", href: "#podcasts" },
-    { title: "Betriebliches Gesundheitsmanagement", href: "#workplace" },
-    { title: "Gemeinschaft", href: "#community" },
-    { title: "Versicherungsleistungen", href: "#benefits" },
+    { title: "Wechseljahre-Assessment", href: "/assessment" },
+    { title: "Gesundheitslexikon", href: "/lexicon" },
+    { title: "Wissensbereich", href: "/knowledge" },
+    { title: "Podcasts & Medien", href: "/podcasts" },
+    { title: "Betriebliche Gesundheit", href: "/workplace" },
+    { title: "Community & Support", href: "/community" },
+    { title: "Versicherungsleistungen", href: "/benefits" },
   ];
 
   return (
@@ -21,19 +22,19 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 gradient-primary rounded-full"></div>
-            <span className="text-xl font-bold text-gradient">AOK PLUS</span>
+            <Link to="/" className="text-xl font-bold text-gradient">AOK PLUS</Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.title}
-                href={item.href}
+                to={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -60,14 +61,14 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t pt-4">
             <div className="flex flex-col space-y-3">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.title}
-                  href={item.href}
+                  to={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4 border-t">
                 <Button variant="outline" size="sm">
