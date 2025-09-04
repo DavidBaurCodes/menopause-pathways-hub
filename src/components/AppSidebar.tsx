@@ -24,6 +24,12 @@ import {
 
 const navigationGroups = [
   {
+    label: "Navigation",
+    items: [
+      { title: "Übersicht", url: "/", icon: FileText },
+    ]
+  },
+  {
     label: "Wissen & Tools",
     items: [
       { title: "Assessment", url: "/assessment", icon: FileText },
@@ -45,6 +51,7 @@ const navigationGroups = [
     items: [
       { title: "Arbeitsplatz", url: "/workplace", icon: Building2 },
       { title: "Leistungen", url: "/benefits", icon: Shield },
+      { title: "Informationskanäle", url: "/channels", icon: Shield },
     ]
   }
 ];
