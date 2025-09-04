@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                 <span className="text-gradient">Wechseljahre.</span>
+                 <span className="text-gradient">Wechseljahre-Begleiter</span>
               </h1>
                <div className="space-y-1">
                  <div className="flex items-center gap-3">
@@ -18,7 +18,7 @@ const HeroSection = () => {
                     {/* <div className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold">
                       Mein
                       <br />
-                    </div> */}
+                     </div> */}
                     <div className="flex">
                       <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold p-1">
                         Mein 
@@ -37,7 +37,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto" asChild>
-                <Link to="/assessment">Begleitung starten</Link>
+                <Link to="/assessment">Selbsttest starten</Link>
               </Button>
               <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 hover:text-primary w-full sm:w-auto">
                 Ressourcen erkunden
