@@ -31,6 +31,8 @@ import Arbeitskultur from "./pages/Arbeitskultur";
 import Berufsalltag from "./pages/Berufsalltag";
 import Medien from "./pages/Medien";
 import AOKPlus from "./pages/AOKPlus";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -72,6 +74,8 @@ const App = () => (
                   <Route path="/berufsalltag" element={<Berufsalltag />} />
                   <Route path="/medien" element={<Medien />} />
                   <Route path="/aok-plus" element={<AOKPlus />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/register" element={<Register />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

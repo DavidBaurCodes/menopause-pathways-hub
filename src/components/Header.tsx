@@ -17,14 +17,18 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex items-center space-x-2 sm:space-x-4 pr-2">
-            <Button variant="outline" size="sm" className="flex items-center gap-2">
-              <LogIn className="w-4 h-4" />
-              Anmelden
+          <div className="flex items-center space-x-2 sm:space-x-3 pr-2">
+            <Button variant="ghost" size="sm" className="flex items-center gap-2" asChild>
+              <Link to="/login">
+                <LogIn className="w-4 h-4" />
+                Anmelden
+              </Link>
             </Button>
-            <Button size="sm" className="gradient-primary text-white flex items-center gap-2">
-              <Sparkles className="w-4 h-4" />
-              Jetzt starten
+            <Button size="sm" className="gradient-primary text-white flex items-center gap-2" asChild>
+              <Link to="/register">
+                <Sparkles className="w-4 h-4" />
+                Registrieren
+              </Link>
             </Button>
           </div>
         </div>
