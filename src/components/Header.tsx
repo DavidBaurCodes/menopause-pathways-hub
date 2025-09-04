@@ -7,13 +7,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { title: "Wechseljahre-Assessment", href: "/assessment" },
-    { title: "Gesundheitslexikon", href: "/lexicon" },
-    { title: "Wissensbereich", href: "/knowledge" },
-    { title: "Podcasts & Medien", href: "/podcasts" },
-    { title: "Betriebliche Gesundheit", href: "/workplace" },
-    { title: "Community & Support", href: "/community" },
-    { title: "Versicherungsleistungen", href: "/benefits" },
+    { title: "Assessment", href: "/assessment" },
+    { title: "Lexikon", href: "/lexicon" },
+    { title: "Wissen", href: "/knowledge" },
+    { title: "Medien", href: "/podcasts" },
+    { title: "Arbeitsplatz", href: "/workplace" },
+    { title: "Community", href: "/community" },
+    { title: "Leistungen", href: "/benefits" },
   ];
 
   return (
