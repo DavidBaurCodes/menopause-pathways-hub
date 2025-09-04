@@ -11,12 +11,12 @@ const HeroSection = () => {
                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                  <span className="text-gradient">
                    Deine Begleitung<br />
-                   in den Wechseljahren
+                   in den Wechseljahren.
                  </span>
                </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                Stark, selbstbestimmt, mitten im Leben - hier findest du Antworten, die dein Körper jetzt braucht
-              </p>
+               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                 Stark, selbstbestimmt, mitten im Leben - hier findest du Antworten, die dein Körper jetzt braucht.
+               </p>
                <div className="space-y-1">
                  <div className="flex items-center gap-3">
                    <Logo size={40} />
