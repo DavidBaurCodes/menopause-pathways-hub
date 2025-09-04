@@ -127,19 +127,36 @@ const Login = () => {
             </CardContent>
           </Card>
 
-          {/* Info note */}
-          <div className="mt-6 text-center text-xs text-muted-foreground">
-            <p>
-              Durch die Anmeldung stimmst du unseren{" "}
-              <Link to="/terms" className="text-primary hover:underline">
-                Nutzungsbedingungen
-              </Link>{" "}
-              und der{" "}
-              <Link to="/privacy" className="text-primary hover:underline">
-                Datenschutzerklärung
-              </Link>{" "}
-              zu.
-            </p>
+          {/* Info section */}
+          <div className="mt-6 bg-white/50 backdrop-blur rounded-xl p-4 border">
+            <h3 className="font-medium text-sm text-center mb-3">Deine Vorteile nach der Anmeldung:</h3>
+            <div className="space-y-2 text-xs">
+              <div className="flex items-center gap-2">
+                <LogIn className="w-3 h-3 text-success flex-shrink-0" />
+                <span>Zugriff auf dein personalisiertes Dashboard</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <LogIn className="w-3 h-3 text-success flex-shrink-0" />
+                <span>Gespeicherte Inhalte und Fortschritte</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <LogIn className="w-3 h-3 text-success flex-shrink-0" />
+                <span>Exklusive AOK PLUS Mitgliederinhalte</span>
+              </div>
+            </div>
+            <div className="mt-4 pt-3 border-t text-center text-xs text-muted-foreground">
+              <p>
+                Durch die Anmeldung stimmst du unseren{" "}
+                <Link to="/terms" className="text-primary hover:underline">
+                  Nutzungsbedingungen
+                </Link>{" "}
+                und der{" "}
+                <Link to="/privacy" className="text-primary hover:underline">
+                  Datenschutzerklärung
+                </Link>{" "}
+                zu.
+              </p>
+            </div>
           </div>
         </div>
       </div>
