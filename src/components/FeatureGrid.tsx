@@ -176,7 +176,7 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    size="sm"
+                    size="default"
                     className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
