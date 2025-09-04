@@ -12,19 +12,22 @@ const Blog = () => {
       icon: <Heart className="w-5 h-5" />,
       title: "Gesundheit & Wellness",
       count: 24,
-      color: "text-primary"
+      color: "text-primary",
+      url: "/blog/category/gesundheit-wellness"
     },
     {
       icon: <Briefcase className="w-5 h-5" />,
       title: "Arbeitsplatz",
       count: 18,
-      color: "text-accent"
+      color: "text-accent",
+      url: "/blog/category/arbeitsplatz"
     },
     {
       icon: <Users className="w-5 h-5" />,
       title: "Persönliche Erfahrungen",
       count: 32,
-      color: "text-success"
+      color: "text-success",
+      url: "/blog/category/persoenliche-erfahrungen"
     }
   ];
 
@@ -37,7 +40,8 @@ const Blog = () => {
       readTime: "5 Min",
       category: "Gesundheit",
       featured: true,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/10-tipps-mehr-energie-wechseljahre"
     },
     {
       title: "Führungskraft in den Wechseljahren: Meine Geschichte",
@@ -47,7 +51,8 @@ const Blog = () => {
       readTime: "8 Min",
       category: "Arbeitsplatz",
       featured: true,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/fuehrungskraft-wechseljahre-meine-geschichte"
     },
     {
       title: "Schlafqualität verbessern: Was wirklich hilft",
@@ -57,7 +62,8 @@ const Blog = () => {
       readTime: "6 Min", 
       category: "Gesundheit",
       featured: false,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/schlafqualitaet-verbessern-wechseljahre"
     },
     {
       title: "Kommunikation am Arbeitsplatz während der Wechseljahre",
@@ -67,7 +73,8 @@ const Blog = () => {
       readTime: "7 Min",
       category: "Arbeitsplatz", 
       featured: false,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/kommunikation-arbeitsplatz-wechseljahre"
     },
     {
       title: "Ernährung in den Wechseljahren: Ein ganzheitlicher Ansatz",
@@ -77,7 +84,8 @@ const Blog = () => {
       readTime: "9 Min",
       category: "Gesundheit",
       featured: false,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/ernaehrung-wechseljahre-ganzheitlicher-ansatz"
     },
     {
       title: "Meine Wechseljahre-Reise: Von Verwirrung zu Klarheit",
@@ -87,7 +95,8 @@ const Blog = () => {
       readTime: "11 Min",
       category: "Persönlich",
       featured: false,
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      url: "/blog/wechseljahre-reise-verwirrung-zu-klarheit"
     }
   ];
 
@@ -155,8 +164,10 @@ const Blog = () => {
                       <p className="text-sm text-muted-foreground mb-4">
                         {category.count} Artikel verfügbar
                       </p>
-                      <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5">
-                        Artikel lesen
+                      <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5" asChild>
+                        <a href={category.url}>
+                          Artikel lesen
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -209,9 +220,11 @@ const Blog = () => {
                         </div>
                       </div>
                       
-                      <Button size="sm" className="w-full gradient-primary text-white group/read">
-                        <span>Artikel lesen</span>
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover/read:translate-x-1 transition-transform" />
+                      <Button size="sm" className="w-full gradient-primary text-white group/read" asChild>
+                        <a href={post.url}>
+                          <span>Artikel lesen</span>
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover/read:translate-x-1 transition-transform" />
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
