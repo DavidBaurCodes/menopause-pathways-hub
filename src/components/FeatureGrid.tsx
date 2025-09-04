@@ -256,8 +256,8 @@ const FeatureGrid = () => {
               <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
                 Schließen Sie sich tausenden von Frauen an, die durch unsere umfassenden Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
               </p>
-              <Button size="sm" className="gradient-primary text-white shadow-medium">
-                Community beitreten
+              <Button size="sm" className="gradient-primary text-white shadow-medium" asChild>
+                <a href="/community">Community beitreten</a>
               </Button>
             </div>
           </div>
