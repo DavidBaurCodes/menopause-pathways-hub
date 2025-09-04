@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/ui/logo";
 import heroImage from "@/assets/hero-image.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-[80vh] flex items-center gradient-subtle">
@@ -9,7 +10,10 @@ const HeroSection = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-stone-950">Meno PLUS</p>
+              <div className="flex items-center gap-3">
+                <Logo size={40} />
+                <span className="text-base sm:text-lg md:text-xl leading-relaxed text-stone-950">meno Plus</span>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
