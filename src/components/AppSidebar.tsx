@@ -72,7 +72,7 @@ export function AppSidebar() {
     items.some(item => isActive(item.url));
 
   return (
-    <Sidebar className={state === "collapsed" ? "w-14" : "w-70"} collapsible="icon">
+    <Sidebar className={state === "collapsed" ? "w-14" : "w-50"} collapsible="icon">
       <SidebarContent className="py-4">
         {navigationGroups.map((group) => (
           <SidebarGroup key={group.label}>
