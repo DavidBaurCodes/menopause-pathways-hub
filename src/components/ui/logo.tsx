@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import AOKPlusLogo from "@/assets/AOK_PLUS_Signet_Gruen_RGB.png";
 
 interface LogoProps {
   className?: string;
@@ -7,54 +8,13 @@ interface LogoProps {
 
 export const Logo = ({ className, size = 32 }: LogoProps) => {
   return (
-    <svg 
+    <img 
+      src={AOKPlusLogo}
+      alt="AOK PLUS Logo"
       width={size} 
-      height={size} 
-      viewBox="0 0 100 100" 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-      className={cn("", className)}
-    >
-      <circle 
-        cx="50" 
-        cy="50" 
-        r="45" 
-        stroke="#237f52" 
-        strokeWidth="10" 
-        fill="white"
-      />
-      {/* Top leaf/drop */}
-      <path 
-        d="M50 15 C45 15, 40 20, 40 27 C40 34, 45 40, 50 40 C55 40, 60 34, 60 27 C60 20, 55 15, 50 15 Z" 
-        fill="#237f52"
-      />
-      {/* Left leaf */}
-      <path 
-        d="M20 45 C20 38, 25 33, 32 33 C39 33, 45 38, 45 45 C45 52, 40 57, 33 57 C26 57, 20 52, 20 45 Z" 
-        fill="#237f52"
-      />
-      {/* Right leaf */}
-      <path 
-        d="M80 45 C80 38, 75 33, 68 33 C61 33, 55 38, 55 45 C55 52, 60 57, 67 57 C74 57, 80 52, 80 45 Z" 
-        fill="#237f52"
-      />
-      {/* Stem */}
-      <rect 
-        x="47" 
-        y="40" 
-        width="6" 
-        height="35" 
-        fill="#237f52"
-      />
-      {/* Bottom horizontal line */}
-      <rect 
-        x="35" 
-        y="72" 
-        width="30" 
-        height="6" 
-        fill="#237f52"
-      />
-    </svg>
+      height={size}
+      className={cn("object-contain", className)}
+    />
   );
 };
 
