@@ -8,6 +8,9 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                 <span className="text-gradient whitespace-nowrap">Deine Wechseljahre-Begleitung</span>
+              </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
                 Stark, weiblich, mitten im Leben - hier findest du Antworten, die dein Körper jetzt braucht
               </p>
@@ -60,15 +63,6 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-strong">
               <img src={heroImage} alt="Diverse Frauen unterstützen sich gegenseitig durch die Wechseljahre" className="w-full h-[350px] sm:h-[400px] md:h-[500px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-              
-              {/* Headline overlay */}
-              <div className="absolute top-6 left-6 right-6">
-                <div className="bg-background/90 backdrop-blur-sm rounded-xl p-4 sm:p-6">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                    <span className="text-gradient whitespace-nowrap">Deine Wechseljahre-Begleitung</span>
-                  </h1>
-                </div>
-              </div>
             </div>
             
             {/* Floating cards */}
