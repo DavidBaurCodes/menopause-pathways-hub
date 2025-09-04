@@ -3,10 +3,30 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Search, BookOpen, Heart, Brain, Calendar } from "lucide-react";
+import { Search, BookOpen } from "lucide-react";
+import { LeafIcon, HealthCareIcon, HeartPulseIcon, HeartSearchIcon, NutritionIcon } from "@/components/ui/logo";
 
 const HealthLexicon = () => {
   const [searchTerm, setSearchTerm] = useState("");
+
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case "Phasen":
+        return <LeafIcon className="w-5 h-5" />;
+      case "Symptome":
+        return <HeartPulseIcon className="w-5 h-5" />;
+      case "Hormone":
+        return <HealthCareIcon className="w-5 h-5" />;
+      case "Behandlung":
+        return <HealthCareIcon className="w-5 h-5" />;
+      case "Risiken":
+        return <HeartSearchIcon className="w-5 h-5" />;
+      case "Natürliche Hilfe":
+        return <NutritionIcon className="w-5 h-5" />;
+      default:
+        return <BookOpen className="w-5 h-5" />;
+    }
+  };
 
   const lexiconEntries = [
     {
@@ -14,84 +34,84 @@ const HealthLexicon = () => {
       category: "Phasen",
       definition: "Die Übergangszeit vor der Menopause, in der die Hormone zu schwanken beginnen. Kann 2-10 Jahre dauern und beginnt meist zwischen dem 40. und 44. Lebensjahr.",
       symptoms: ["Unregelmäßige Periode", "Hitzewallungen", "Schlafprobleme", "Stimmungsschwankungen"],
-      icon: <Calendar className="w-5 h-5" />
+      icon: <LeafIcon className="w-5 h-5" />
     },
     {
       term: "Menopause", 
       category: "Phasen",
       definition: "Der Zeitpunkt, an dem die Menstruation 12 Monate lang ausgeblieben ist. Das Durchschnittsalter liegt bei 51 Jahren.",
       symptoms: ["Keine Menstruation", "Hitzewallungen", "Vaginale Trockenheit", "Gewichtszunahme"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <LeafIcon className="w-5 h-5" />
     },
     {
       term: "Postmenopause",
       category: "Phasen", 
       definition: "Die Zeit nach der Menopause. Die Hormone haben sich auf einem niedrigeren Niveau eingependelt.",
       symptoms: ["Osteoporose-Risiko", "Herz-Kreislauf-Risiko", "Hautveränderungen", "Gedächtnisprobleme"],
-      icon: <Brain className="w-5 h-5" />
+      icon: <LeafIcon className="w-5 h-5" />
     },
     {
       term: "Hitzewallungen",
       category: "Symptome",
       definition: "Plötzliche Wärmegefühle, meist im Oberkörper und Gesicht. Können von Schwitzen und Herzklopfen begleitet werden.",
       symptoms: ["Schwitzen", "Rötung der Haut", "Herzklopfen", "Schwindel"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <HeartPulseIcon className="w-5 h-5" />
     },
     {
       term: "Brainfog",
       category: "Symptome", 
       definition: "Gefühl geistiger Benommenheit, Vergesslichkeit und Konzentrationsschwierigkeiten während der Wechseljahre.",
       symptoms: ["Vergesslichkeit", "Konzentrationsprobleme", "Wortfindungsstörungen", "Müdigkeit"],
-      icon: <Brain className="w-5 h-5" />
+      icon: <HeartPulseIcon className="w-5 h-5" />
     },
     {
       term: "Hormontherapie (HRT)",
       category: "Behandlung",
       definition: "Medizinische Behandlung mit Östrogen und/oder Progesteron zur Linderung von Wechseljahresbeschwerden.",
       symptoms: ["Reduzierte Hitzewallungen", "Besserer Schlaf", "Schutz vor Knochenschwund", "Mögliche Nebenwirkungen"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <HealthCareIcon className="w-5 h-5" />
     },
     {
       term: "Östrogen",
       category: "Hormone",
       definition: "Das wichtigste weibliche Geschlechtshormon, das in den Eierstöcken produziert wird. Sinkt während der Wechseljahre stark ab.",
       symptoms: ["Reguliert Menstruationszyklus", "Beeinflusst Knochendichte", "Wirkt auf Haut und Haare", "Beeinflusst Stimmung"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <HealthCareIcon className="w-5 h-5" />
     },
     {
       term: "Progesteron",
       category: "Hormone", 
       definition: "Hormon, das den Menstruationszyklus reguliert und die Gebärmutterschleimhaut auf eine Schwangerschaft vorbereitet.",
       symptoms: ["Reguliert Zyklus", "Beruhigende Wirkung", "Beeinflusst Schlaf", "Sinkt vor Östrogen"],
-      icon: <Brain className="w-5 h-5" />
+      icon: <HealthCareIcon className="w-5 h-5" />
     },
     {
       term: "Vaginale Atrophie",
       category: "Symptome",
       definition: "Ausdünnung und Trockenheit der Scheidenwände durch Östrogenmangel. Kann Schmerzen und Infekte verursachen.",
       symptoms: ["Trockenheit", "Schmerzen beim Sex", "Juckreiz", "Häufige Harnwegsinfekte"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <HeartPulseIcon className="w-5 h-5" />
     },
     {
       term: "Osteoporose", 
       category: "Risiken",
       definition: "Knochenschwund durch Östrogenmangel. Das Risiko für Knochenbrüche steigt erheblich nach der Menopause.",
       symptoms: ["Fragile Knochen", "Erhöhtes Bruchrisiko", "Rückenschmerzen", "Größenverlust"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <HeartSearchIcon className="w-5 h-5" />
     },
     {
       term: "Phytoöstrogene",
       category: "Natürliche Hilfe",
       definition: "Pflanzliche Stoffe, die ähnlich wie Östrogen wirken. Finden sich in Soja, Leinsamen und anderen Pflanzen.",
       symptoms: ["Milde hormonähnliche Wirkung", "In Soja enthalten", "Können Hitzewallungen lindern", "Natürliche Alternative"],
-      icon: <Brain className="w-5 h-5" />
+      icon: <NutritionIcon className="w-5 h-5" />
     },
     {
       term: "Prämenopause",
       category: "Phasen",
       definition: "Die Zeit vor den Wechseljahren, in der noch regelmäßige Menstruationszyklen auftreten.",
       symptoms: ["Regelmäßige Periode", "Normale Hormonspiegel", "Gelegentliche PMS-Symptome", "Normale Fruchtbarkeit"],
-      icon: <Heart className="w-5 h-5" />
+      icon: <LeafIcon className="w-5 h-5" />
     }
   ];
 
@@ -160,7 +180,7 @@ const HealthLexicon = () => {
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
-                    <BookOpen className="w-5 h-5" />
+                    {getCategoryIcon(entry.category)}
                   </div>
                   <Badge variant="outline" className="text-xs">
                     {entry.category}
