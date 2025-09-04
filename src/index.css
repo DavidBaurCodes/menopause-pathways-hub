@@ -12,6 +12,8 @@ All colors MUST be HSL.
     --background: 0 0% 100%;
     --foreground: 233 13% 25%;
 
+    /* */
+
     /* Card components */
     --card: 0 0% 100%;
     --card-foreground: 233 13% 25%;
