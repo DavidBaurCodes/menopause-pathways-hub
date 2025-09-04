@@ -65,21 +65,21 @@ const FeatureGrid = () => {
       icon: <Users className="w-8 h-8" />,
       title: "Community",
       description: "Verbinden Sie sich mit Gleichgesinnten, teilen Sie Erfahrungen und bauen Sie unterstützende Netzwerke auf.",
-      href: "#community-building",
+      href: "/community",
       color: "text-primary"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Life Hacks - Tipps",
       description: "Von Brainfog bis Hitzewallungen: Entdecke clevere Alltagstipps und Strategien, die dir helfen, dich wieder wohl in deinem Körper zu fühlen.",
-      href: "#life-hacks",
+      href: "/lifehacks",
       color: "text-success"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Allies - Partner",
       description: "Informationen und Ressourcen für Partner, Familie, Freunde und Arbeitgebende von betroffenen Frauen.",
-      href: "#allies",
+      href: "/allies",
       color: "text-warning"
     }
   ];
