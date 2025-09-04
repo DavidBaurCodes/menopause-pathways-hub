@@ -325,11 +325,11 @@ const FeatureGrid = () => {
               Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-              <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto">
-                Assessment machen
+              <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto" asChild>
+                <a href="/assessment">Begleitung starten</a>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 w-full sm:w-auto">
-                Ressourcen durchstöbern
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 w-full sm:w-auto" asChild>
+                <a href="/knowledge">Ressourcen erkunden</a>
               </Button>
             </div>
           </div>
