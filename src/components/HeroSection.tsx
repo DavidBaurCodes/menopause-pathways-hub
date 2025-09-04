@@ -10,8 +10,8 @@ const HeroSection = () => {
             <div className="space-y-4">
                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                  <span className="text-gradient">
-                   Deine Wechseljahre-<br />
-                   Begleitung
+                   Deine Begleitung<br />
+                   in den Wechseljahren
                  </span>
                </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
