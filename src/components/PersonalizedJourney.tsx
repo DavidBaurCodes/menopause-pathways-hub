@@ -153,6 +153,16 @@ const PersonalizedJourney = () => {
                   </CardHeader>
                   <CardContent className="text-center">
                     <CardDescription className="text-base leading-relaxed mb-6">{rec.description}</CardDescription>
+                    <Button 
+                      variant="outline" 
+                      className="border-primary text-primary hover:bg-primary/5"
+                      asChild
+                    >
+                      <a href="/wechseljahre-details">
+                        Mehr erfahren
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </a>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}

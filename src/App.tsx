@@ -19,6 +19,7 @@ import Workplace from "./pages/Workplace";
 import Community from "./pages/Community";
 import Benefits from "./pages/Benefits";
 import Channels from "./pages/Channels";
+import MenopauseDetails from "./pages/MenopauseDetails";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
                   <Route path="/community" element={<Community />} />
                   <Route path="/benefits" element={<Benefits />} />
                   <Route path="/channels" element={<Channels />} />
+                  <Route path="/wechseljahre-details" element={<MenopauseDetails />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
