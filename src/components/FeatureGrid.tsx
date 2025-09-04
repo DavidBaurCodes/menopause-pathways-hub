@@ -177,7 +177,7 @@ const FeatureGrid = () => {
                   <Button 
                     variant="ghost" 
                     size="default"
-                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
+                    className="justify-start px-4 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
