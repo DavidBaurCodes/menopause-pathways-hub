@@ -4,7 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, Heart, Brain, Calendar } from "lucide-react";
+import { ArrowRight, Heart, Brain, Calendar, Sparkles } from "lucide-react";
+import heroImage from "@/assets/personalized-journey-hero.jpg";
 
 const PersonalizedJourney = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -119,47 +120,76 @@ const PersonalizedJourney = () => {
     return (
       <section id="journey" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                Ihr personalisierter <span className="text-gradient">Begleitplan</span>
-              </h2>
-              <p className="text-base sm:text-lg text-muted-foreground px-4">
-                Basierend auf Ihren Antworten empfehlen wir Ihnen diese Ressourcen:
-              </p>
+          <div className="max-w-6xl mx-auto">
+            
+            {/* Hero Section with Image */}
+            <div className="relative rounded-2xl overflow-hidden mb-12 shadow-strong">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70 z-10"></div>
+              <img 
+                src={heroImage} 
+                alt="Personalisierte Wechseljahre-Begleitung"
+                className="w-full h-64 sm:h-80 object-cover"
+              />
+              <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center text-white px-6">
+                <Sparkles className="w-12 h-12 mb-4 text-white" />
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                  Ihr Weg ist einzigartig!
+                </h2>
+                <p className="text-lg sm:text-xl max-w-2xl opacity-90">
+                  Basierend auf Ihren Antworten - maßgeschneiderte Empfehlungen für Ihre Wechseljahre
+                </p>
+              </div>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Recommendations Grid */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
               {recommendations.map((rec, index) => (
-                <Card key={index} className="shadow-soft hover:shadow-medium transition-shadow">
-                  <CardHeader className="pb-3">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-3">
+                <Card key={index} className="group hover:shadow-strong transition-all duration-300 border-2 hover:border-primary/30 bg-gradient-to-br from-white to-primary/5">
+                  <CardHeader className="text-center pb-4">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center text-white mb-4 mx-auto group-hover:scale-110 transition-transform shadow-medium">
                       {rec.icon}
                     </div>
-                    <CardTitle className="text-lg">{rec.title}</CardTitle>
+                    <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">{rec.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">{rec.description}</CardDescription>
+                  <CardContent className="text-center">
+                    <CardDescription className="text-base leading-relaxed mb-6">{rec.description}</CardDescription>
                   </CardContent>
                 </Card>
               ))}
             </div>
 
-            <div className="text-center">
-              <Button 
-                onClick={() => {
-                  setCurrentStep(0);
-                  setAnswers({});
-                  setShowResults(false);
-                }}
-                variant="outline"
-                className="mb-4 sm:mb-0 sm:mr-4 w-full sm:w-auto"
-              >
-                Assessment wiederholen
-              </Button>
-              <Button className="gradient-primary text-white w-full sm:w-auto">
-                Alle Ressourcen erkunden
-              </Button>
+            {/* Call to Action Section */}
+            <div className="bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 rounded-2xl p-8 text-center border border-primary/20">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">
+                Bereit für konkrete Schritte?
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Entdecken Sie praktische Lifehacks und bewährte Strategien, die sofort umsetzbar sind.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  className="gradient-primary text-white shadow-medium hover:shadow-strong transition-all px-8 py-3 text-lg font-semibold"
+                  asChild
+                >
+                  <a href="/lifehacks">
+                    <Sparkles className="w-5 h-5 mr-2" />
+                    Praktische Lifehacks entdecken
+                  </a>
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary/5 px-8 py-3 text-lg"
+                  onClick={() => {
+                    setCurrentStep(0);
+                    setAnswers({});
+                    setShowResults(false);
+                  }}
+                >
+                  Assessment wiederholen
+                </Button>
+              </div>
             </div>
           </div>
         </div>
