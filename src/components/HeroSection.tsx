@@ -12,14 +12,22 @@ const HeroSection = () => {
                 Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
                <div className="space-y-1">
-                 <div className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">
-                   Dein
-                 </div>
                  <div className="flex items-center gap-3">
                    <Logo size={40} />
-                   <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
-                     <span className="italic">meno</span><span className="font-bold not-italic">PLUS</span>
-                   </span>
+                   <div className="flex items-center gap-1 justify-items-center">
+                    <div className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
+                      Dein
+                      <br />
+                    </div>
+                    <div className="flex">
+                      <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">
+                        meno
+                      </span>
+                      <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-bold">
+                        PLUS
+                      </span>
+                    </div>
+                   </div>
                  </div>
                </div>
             </div>
