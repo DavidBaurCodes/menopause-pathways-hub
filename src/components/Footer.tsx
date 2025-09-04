@@ -1,6 +1,7 @@
 import { Heart, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import aokPlusLogo from "@/assets/AOK_PLUS_Signet_Gruen_RGB.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -24,7 +25,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 gradient-primary rounded-full"></div>
+              <img src={aokPlusLogo} alt="AOK PLUS Logo" className="w-8 h-8" />
               <span className="text-xl font-bold text-gradient">AOK PLUS</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
