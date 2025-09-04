@@ -147,7 +147,8 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
@@ -184,7 +185,8 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
@@ -221,7 +223,8 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
@@ -258,7 +261,8 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
@@ -295,7 +299,8 @@ const FeatureGrid = () => {
                   </CardDescription>
                   <Button 
                     variant="ghost" 
-                    className="p-0 h-auto font-medium text-primary hover:text-primary-dark group/btn"
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
                     asChild
                   >
                     <a href={feature.href}>
