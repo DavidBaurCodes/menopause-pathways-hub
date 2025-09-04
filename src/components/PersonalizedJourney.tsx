@@ -77,6 +77,11 @@ const PersonalizedJourney = () => {
       setCurrentStep(currentStep + 1);
     } else {
       setShowResults(true);
+      // Scroll to top when showing results
+      const journeySection = document.getElementById('journey');
+      if (journeySection) {
+        journeySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   };
 
