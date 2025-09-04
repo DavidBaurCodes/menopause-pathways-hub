@@ -12,7 +12,7 @@ const HeroSection = () => {
                  <span className="text-gradient whitespace-nowrap">Deine Wechseljahre-Begleitung</span>
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                Stark, selbstbestimmt, mitten im Leben - hier findest du Antworten, die dein Körper jetzt braucht
+                Stark, selbstbestimmt, mitten im Leben - die Balance, die dein Körper braucht
               </p>
                <div className="space-y-1">
                  <div className="flex items-center gap-3">
