@@ -11,10 +11,10 @@ const HeroSection = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
-               <div className="flex items-center gap-3">
-                 <Logo size={40} />
-                 <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground font-script font-bold">Mein Meno Plus</span>
-               </div>
+              <div className="flex items-center gap-3">
+                <Logo size={40} />
+                <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground">Mein meno Plus</span>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -47,10 +47,7 @@ const HeroSection = () => {
             {/* Floating cards */}
             
             
-            <div className="absolute -top-4 -right-2 sm:-right-4 bg-white p-3 sm:p-4 rounded-xl shadow-medium border">
-              <div className="text-xl sm:text-2xl font-bold text-accent">24/7</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Unterstützung verfügbar</div>
-            </div>
+            
           </div>
         </div>
       </div>
