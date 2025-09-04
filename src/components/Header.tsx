@@ -18,7 +18,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center space-x-2 sm:space-x-3 pr-2">
-            <Button variant="outline" size="sm" className="flex items-center gap-2 border-2" asChild>
+            <Button size="sm" className="gradient-primary text-white flex items-center gap-2 border-2 border-transparent" asChild>
               <Link to="/login">
                 <LogIn className="w-4 h-4" />
                 Anmelden
