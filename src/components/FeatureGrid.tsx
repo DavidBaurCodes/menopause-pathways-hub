@@ -33,29 +33,29 @@ const FeatureGrid = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Bewegung",
-      description: "Virtuelle und Präsenz-Gruppensuche für Bewegungskurse. Präventionskurse der AOK PLUS speziell für Frauen in den Wechseljahren.",
-      href: "#movement",
+      description: "Virtuelle und Präsenz-Gruppensuche für Bewegungskurse und Präventionskurse der AOK PLUS.",
+      href: "/bewegung",
       color: "text-success"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Ernährung",
-      description: "Individuelle Ernährungsberatung online oder Suche vor Ort. Verlinkt zu den Angeboten der AOK PLUS.",
-      href: "#nutrition",
+      description: "Individuelle Ernährungsberatung online oder vor Ort mit AOK PLUS Angeboten.",
+      href: "/ernaehrung",
       color: "text-primary-light"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Wellness",
-      description: "Me-Time Strategien für Ihr Wohlbefinden und Stressbewältigung, Achtsamkeit, Apps und Angebote vor Ort.",
-      href: "#wellness",
+      description: "Me-Time Strategien, Stressbewältigung und Achtsamkeits-Apps für Ihr Wohlbefinden.",
+      href: "/wellness",
       color: "text-accent"
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: "Psyche",
       description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung.",
-      href: "#mental-health",
+      href: "/psyche",
       color: "text-warning"
     }
   ];

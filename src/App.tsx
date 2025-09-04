@@ -21,6 +21,10 @@ import Benefits from "./pages/Benefits";
 import Channels from "./pages/Channels";
 import MenopauseDetails from "./pages/MenopauseDetails";
 import MedicalExperts from "./pages/MedicalExperts";
+import Bewegung from "./pages/Bewegung";
+import Ernaehrung from "./pages/Ernaehrung";
+import Wellness from "./pages/Wellness";
+import Psyche from "./pages/Psyche";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +56,10 @@ const App = () => (
                   <Route path="/channels" element={<Channels />} />
                   <Route path="/wechseljahre-details" element={<MenopauseDetails />} />
                   <Route path="/medical-experts" element={<MedicalExperts />} />
+                  <Route path="/bewegung" element={<Bewegung />} />
+                  <Route path="/ernaehrung" element={<Ernaehrung />} />
+                  <Route path="/wellness" element={<Wellness />} />
+                  <Route path="/psyche" element={<Psyche />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
