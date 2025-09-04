@@ -32,46 +32,53 @@ const FeatureGrid = () => {
   const lifestyleFeatures = [
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Virtuelle Sportgruppen",
-      description: "Online-Fitnesskurse und Sportgruppen speziell für Frauen in den Wechseljahren.",
-      href: "#virtual-sports",
+      title: "Bewegung",
+      description: "Virtuelle und Präsenz-Gruppensuche für Bewegungskurse. Präventionskurse der AOK PLUS speziell für Frauen in den Wechseljahren.",
+      href: "#movement",
       color: "text-success"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Ernährung & Wellness",
-      description: "Persönliche Ernährungsberatung, Sport-Programme und Me-Time Strategien für Ihr Wohlbefinden.",
-      href: "#nutrition-wellness",
+      title: "Ernährung",
+      description: "Individuelle Ernährungsberatung online oder Suche vor Ort. Verlinkt zu den Angeboten der AOK PLUS.",
+      href: "#nutrition",
       color: "text-primary-light"
     },
     {
-      icon: <BookOpen className="w-8 h-8" />,
-      title: "Psyche & Präventionsgesetz",
-      description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung nach dem Präventionsgesetz.",
-      href: "#mental-health",
+      icon: <Zap className="w-8 h-8" />,
+      title: "Wellness",
+      description: "Me-Time Strategien für Ihr Wohlbefinden und Stressbewältigung, Achtsamkeit, Apps und Angebote vor Ort.",
+      href: "#wellness",
       color: "text-accent"
+    },
+    {
+      icon: <BookOpen className="w-8 h-8" />,
+      title: "Psyche",
+      description: "Lebensphasenbezogene Frauengesundheit und psychologische Unterstützung.",
+      href: "#mental-health",
+      color: "text-warning"
     }
   ];
 
   const communityFeatures = [
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Community & Peer Groups",
+      title: "Community",
       description: "Verbinden Sie sich mit Gleichgesinnten, teilen Sie Erfahrungen und bauen Sie unterstützende Netzwerke auf.",
       href: "#community-building",
       color: "text-primary"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Life Hacks & Tipps",
-      description: "Praktische Lösungen bei Brainfog, Alltagstipps und bewährte Strategien für den Umgang mit Wechseljahren.",
+      title: "Life Hacks - Tipps",
+      description: "Von Brainfog bis Hitzewallungen: Entdecke clevere Alltagstipps und Strategien, die dir helfen, dich wieder wohl in deinem Körper zu fühlen.",
       href: "#life-hacks",
       color: "text-success"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Allies & Partner",
-      description: "Informationen und Ressourcen für Partner, Familie und Freunde von betroffenen Frauen.",
+      title: "Allies - Partner",
+      description: "Informationen und Ressourcen für Partner, Familie, Freunde und Arbeitgebende von betroffenen Frauen.",
       href: "#allies",
       color: "text-warning"
     }
@@ -80,16 +87,16 @@ const FeatureGrid = () => {
   const workplaceFeatures = [
     {
       icon: <Briefcase className="w-8 h-8" />,
-      title: "Betriebliche Wellness-Hacks",
-      description: "Bean Bags, Ruheräume, Home-Office-Lösungen und spezielle Office Hours für Wechseljahre-Themen.",
-      href: "#workplace-hacks", 
+      title: "Arbeitskultur mit Weitblick",
+      description: "Von anpassbaren Arbeitszeiten über Rückzugsräume bis hin zu sensibler Führungskultur. Entscheidend ist, gemeinsam mit den betroffenen Mitarbeitenden passgenaue Lösungen zu entwickeln, die sowohl das Wohlbefinden stärken als auch die Arbeitsfähigkeit erhalten. So wird Verhältnisprävention zur gelebten Realität – und der Arbeitsplatz zu einem Ort echter Fürsorge.",
+      href: "#workplace-culture", 
       color: "text-primary-light"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "CARE-Arbeit & Balance",
-      description: "Strategien zum Umgang mit Care-Arbeit während der Wechseljahre und Work-Life-Balance.",
-      href: "#care-work",
+      title: "Dein Berufsalltag - deine Strategie",
+      description: "Wechseljahre und Job? Geht klar – wenn du weißt, was dir guttut. Hier findest du erste Ideen, wie du deinen Arbeitsalltag aktiv, fit und motiviert gestalten kannst.",
+      href: "#work-strategies",
       color: "text-accent"
     }
   ];
@@ -97,15 +104,18 @@ const FeatureGrid = () => {
   const mediaFeatures = [
     {
       icon: <Headphones className="w-8 h-8" />,
-      title: "Vielfältige Medienkanäle", 
-      description: "Blogs, LinkedIn-Posts, WhatsApp-Kanäle, Telefonberatung, Plakate und Buchempfehlungen.",
+      title: "Medien", 
+      description: "Noch Fragen - Wir haben weiterführende Antworten: Blogs, Videos, Podcast, Literatur-Empfehlungen, LinkedIn-Posts, Socialmedia-Kanäle, Telefonberatung und Plakate.",
       href: "#media-channels",
       color: "text-primary"
-    },
+    }
+  ];
+
+  const insuranceFeatures = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Versicherungsleistungen",
-      description: "Maßgeschneiderte Versicherungsoptionen und exklusive Leistungen für Wechseljahre-Gesundheit.",
+      title: "Meine AOK PLUS",
+      description: "Exklusive Leistungen für Wechseljahre-Gesundheit.",
       href: "#benefits",
       color: "text-warning"
     }
@@ -162,10 +172,10 @@ const FeatureGrid = () => {
           </div>
         </div>
 
-        {/* Lifestyle & Wellness */}
+        {/* mein Wohlbefinden */}
         <div className="mb-12">
-          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Lifestyle & Wellness</h3>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">mein Wohlbefinden</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {lifestyleFeatures.map((feature, index) => (
               <Card 
                 key={`lifestyle-${index}`} 
@@ -236,6 +246,21 @@ const FeatureGrid = () => {
               </Card>
             ))}
           </div>
+          
+          {/* Community Call-to-Action */}
+          <div className="text-center mt-8">
+            <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8">
+              <h4 className="text-lg sm:text-xl font-bold mb-3">
+                Bereit zu starten?
+              </h4>
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
+                Schließen Sie sich tausenden von Frauen an, die durch unsere umfassenden Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
+              </p>
+              <Button size="sm" className="gradient-primary text-white shadow-medium">
+                Community beitreten
+              </Button>
+            </div>
+          </div>
         </div>
 
         {/* Betriebliche Lösungen */}
@@ -276,10 +301,10 @@ const FeatureGrid = () => {
           </div>
         </div>
 
-        {/* Medien & Versicherung */}
+        {/* Medien */}
         <div className="mb-12">
-          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Medien & Versicherung</h3>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Medien</h3>
+          <div className="grid sm:grid-cols-1 gap-6">
             {mediaFeatures.map((feature, index) => (
               <Card 
                 key={`media-${index}`} 
@@ -312,17 +337,70 @@ const FeatureGrid = () => {
               </Card>
             ))}
           </div>
+          
+          {/* Weitere Informationskanäle */}
+          <div className="text-center mt-8">
+            <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8">
+              <h4 className="text-lg sm:text-xl font-bold mb-3">
+                Weitere Informationskanäle
+              </h4>
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-xl mx-auto">
+                Entdecken Sie verschiedene Wege, um mehr über die Wechseljahre zu erfahren und sich mit unserer Community zu vernetzen.
+              </p>
+              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/5">
+                Alle Kanäle entdecken
+              </Button>
+            </div>
+          </div>
         </div>
 
-        {/* Call to action */}
+        {/* Versicherung */}
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center text-primary">Versicherung</h3>
+          <div className="grid sm:grid-cols-1 gap-6">
+            {insuranceFeatures.map((feature, index) => (
+              <Card 
+                key={`insurance-${index}`} 
+                className="group hover:shadow-medium transition-all duration-300 border-border/50 hover:border-primary/20"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-200 ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <CardDescription className="text-base leading-relaxed">
+                    {feature.description}
+                  </CardDescription>
+                  <Button 
+                    variant="ghost" 
+                    size="sm"
+                    className="justify-start px-0 font-medium text-primary hover:text-primary/80 hover:bg-primary/5 group/btn"
+                    asChild
+                  >
+                    <a href={feature.href}>
+                      Mehr erfahren 
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Main Call to action - moved to end */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-6 sm:p-8 md:p-12">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
-              Bereit zu starten?
+              Ihre Wechseljahre-Reise beginnt hier
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-              Schließen Sie sich tausenden von Frauen an, die durch unsere umfassenden 
-              Wechseljahre-Ressourcen Unterstützung, Wissen und Stärkung gefunden haben.
+              Entdecken Sie maßgeschneiderte Unterstützung, fachkundige Beratung und eine starke Gemeinschaft, 
+              die Sie auf Ihrem Weg durch die Wechseljahre begleitet.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto" asChild>
