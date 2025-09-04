@@ -47,10 +47,6 @@ const HeroSection = () => {
             {/* Floating cards */}
             
             
-            <div className="absolute -top-4 -right-2 sm:-right-4 bg-white p-3 sm:p-4 rounded-xl shadow-medium border">
-              <div className="text-xl sm:text-2xl font-bold text-accent">24/7</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Unterstützung verfügbar</div>
-            </div>
           </div>
         </div>
       </div>
