@@ -20,13 +20,13 @@ const HeroSection = () => {
                       <br />
                     </div> */}
                     <div className="flex">
-                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold p-1">
+                      <span className="text-xl sm:text-2xl md:text-4xl leading-relaxed text-foreground font-bold p-1">
                         Mein 
                       </span>
-                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-script font-bold p-1">
+                      <span className="text-xl sm:text-2xl md:text-4xl leading-relaxed text-foreground font-script font-bold p-1">
                         meno
                       </span>
-                      <span className="text-base sm:text-lg md:text-4xl leading-relaxed text-foreground font-bold p-1">
+                      <span className="text-xl sm:text-2xl md:text-4xl leading-relaxed text-foreground font-bold p-1">
                         PLUS
                       </span>
                     </div>

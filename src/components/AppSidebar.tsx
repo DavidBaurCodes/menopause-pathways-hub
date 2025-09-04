@@ -38,7 +38,7 @@ const navigationGroups = [
   {
     label: "Wissen & Tools",
     items: [
-      { title: "Assessment", url: "/assessment", icon: ClipboardList },
+      { title: "Selbsttest", url: "/assessment", icon: ClipboardList },
       { title: "Lexikon", url: "/lexicon", icon: BookOpen },
       { title: "Wissen", url: "/knowledge", icon: GraduationCap },
     ]
