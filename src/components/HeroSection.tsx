@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-[80vh] flex items-center gradient-subtle">
@@ -12,15 +13,15 @@ const HeroSection = () => {
               </h1>
               <div className="flex items-center gap-3">
                 <Logo size={40} />
-                <span className="text-base sm:text-lg md:text-xl leading-relaxed text-stone-950">Mein meno Plus</span>
+                <span className="text-base sm:text-lg md:text-xl leading-relaxed text-foreground">Mein meno Plus</span>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button size="lg" className="gradient-primary text-white shadow-medium w-full sm:w-auto" asChild>
-                <a href="/assessment">Begleitung starten</a>
+                <Link to="/assessment">Begleitung starten</Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 hover:text-black w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 hover:text-primary w-full sm:w-auto">
                 Ressourcen erkunden
               </Button>
             </div>
