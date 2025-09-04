@@ -12,7 +12,7 @@ const HeroSection = () => {
                 Deine <span className="text-gradient">Wechseljahre</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
-                83 Symptome – kein Mythos, sondern Realität.
+                AOK Meno+
               </p>
             </div>
 
