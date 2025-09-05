@@ -135,7 +135,7 @@ const Lifehacks = () => {
     <>
       <Helmet>
         <title>Lifehacks | AOK PLUS - Praktische Tipps für Wechseljahre</title>
-        <meta name="description" content="Entdecken Sie praktische Lifehacks für Wechseljahre - sowohl für Betroffene als auch für Unternehmen. Einfache Lösungen für den Alltag." />
+        <meta name="description" content="Entdecken Sie praktische Lifehacks für Wechseljahre - sowohl für Dich als auch für Unternehmen. Einfache Lösungen für den Alltag." />
         <meta name="keywords" content="Wechseljahre Lifehacks, Menopause Tipps, Arbeitsplatz Wechseljahre, Unternehmen Menopause, AOK PLUS" />
         
         <meta property="og:title" content="Wechseljahre Lifehacks | AOK PLUS" />
@@ -168,7 +168,7 @@ const Lifehacks = () => {
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
                 Entdecken Sie einfache, praktische Tipps für den Umgang mit Wechseljahren - 
-                für Betroffene und Unternehmen.
+                für Dich und Unternehmen.
               </p>
             </div>
           </section>
@@ -180,7 +180,7 @@ const Lifehacks = () => {
                 <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
                   <TabsTrigger value="personal" className="flex items-center gap-2">
                     <Heart className="w-4 h-4" />
-                    Für Betroffene
+                    Für Dich
                   </TabsTrigger>
                   <TabsTrigger value="companies" className="flex items-center gap-2">
                     <Building2 className="w-4 h-4" />
@@ -191,7 +191,7 @@ const Lifehacks = () => {
                 <TabsContent value="personal" className="space-y-8">
                   <div className="text-center mb-12">
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                      Lifehacks für Betroffene
+                      Lifehacks für Dich
                     </h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
                       Einfache Tricks und Techniken, die Sie sofort in Ihren Alltag integrieren können.
