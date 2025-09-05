@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Linkedin, FileText, Calendar, BookOpen, Mail } from "lucide-react";
+import { MessageCircle, Linkedin, FileText, Calendar, BookOpen, Mail, Video, Users, Music, MessageSquare } from "lucide-react";
 import { HeartChatIcon, DocumentEditIcon, ChartPlusIcon, GiftHandsIcon } from "@/components/ui/logo";
 
 const InformationChannels = () => {
@@ -28,6 +28,38 @@ const InformationChannels = () => {
       action: "Abonnieren",
       href: "#newsletter",
       color: "text-pink-600"
+    },
+    {
+      title: "TikTok",
+      description: "Kurze Videos und Tipps",
+      icon: Video,
+      action: "Folgen",
+      href: "https://tiktok.com/@aokplus",
+      color: "text-black"
+    },
+    {
+      title: "StudiVZ",
+      description: "Vernetze dich mit anderen",
+      icon: Users,
+      action: "Beitreten",
+      href: "https://studivz.net/aokplus",
+      color: "text-blue-500"
+    },
+    {
+      title: "mySpace",
+      description: "Musik und Community",
+      icon: Music,
+      action: "Besuchen",
+      href: "https://myspace.com/aokplus",
+      color: "text-cyan-600"
+    },
+    {
+      title: "ICQ",
+      description: "Direkter Chat und Support",
+      icon: MessageSquare,
+      action: "Chat starten",
+      href: "https://icq.com/aokplus",
+      color: "text-green-500"
     },
     {
       title: "Flyer anfordern",
