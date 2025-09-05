@@ -19,6 +19,24 @@ const Lifehacks = () => {
       url: "/blog/brainfog-durchbrechen-wechseljahre"
     },
     {
+      title: "Schlaf-Routine optimieren",
+      description: "Einfache Gewohnheiten für besseren Schlaf trotz hormoneller Veränderungen.",
+      category: "Schlaf",
+      difficulty: "Mittel",
+      time: "30 Min",
+      icon: <Moon className="w-5 h-5" />,
+      url: "/blog/schlaf-routine-wechseljahre-optimieren"
+    },
+    {
+      title: "Stimmungsschwankungen meistern",
+      description: "Schnelle Techniken zur emotionalen Regulation und Stressbewältigung.",
+      category: "Mental",
+      difficulty: "Einfach",
+      time: "2 Min",
+      icon: <Heart className="w-5 h-5" />,
+      url: "/blog/stimmungsschwankungen-wechseljahre-meistern"
+    },
+    {
       title: "Der 5-Minuten Morgen-Boost",
       description: "Starten Sie mit einer kurzen Atemübung in den Tag für mehr Energie und Gelassenheit.",
       category: "Energie",
@@ -37,15 +55,6 @@ const Lifehacks = () => {
       url: "/blog/hitzewallungen-tipps-alltag"
     },
     {
-      title: "Schlaf-Routine optimieren",
-      description: "Einfache Gewohnheiten für besseren Schlaf trotz hormoneller Veränderungen.",
-      category: "Schlaf",
-      difficulty: "Mittel",
-      time: "30 Min",
-      icon: <Moon className="w-5 h-5" />,
-      url: "/blog/schlaf-routine-wechseljahre-optimieren"
-    },
-    {
       title: "Krafttraining in 15 Minuten",
       description: "Effektive Übungen für starke Knochen und Muskeln - perfekt für den Alltag.",
       category: "Fitness",
@@ -53,15 +62,6 @@ const Lifehacks = () => {
       time: "15 Min",
       icon: <Dumbbell className="w-5 h-5" />,
       url: "/blog/krafttraining-15-minuten-wechseljahre"
-    },
-    {
-      title: "Stimmungsschwankungen meistern",
-      description: "Schnelle Techniken zur emotionalen Regulation und Stressbewältigung.",
-      category: "Mental",
-      difficulty: "Einfach",
-      time: "2 Min",
-      icon: <Heart className="w-5 h-5" />,
-      url: "/blog/stimmungsschwankungen-wechseljahre-meistern"
     },
     {
       title: "Nährstoff-Booster für zwischendurch",
