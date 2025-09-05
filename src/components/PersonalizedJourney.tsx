@@ -90,31 +90,38 @@ const PersonalizedJourney = () => {
     const stage = answers.stage;
     const symptoms = answers.symptoms;
 
-    let recommendations = [];
-
-    if (stage === "pre" || age === "35-40") {
-      recommendations.push({
-        icon: <Calendar className="w-6 h-6" />,
-        title: "Zyklusverfolgung",
-        description: "Beginne mit der Beobachtung von Veränderungen deines Zyklus zur Vorbereitung auf die Perimenopause.",
-      });
-    }
-
-    if (symptoms === "hot-flashes" || symptoms === "sleep-issues") {
-      recommendations.push({
+    let recommendations = [
+      {
         icon: <Heart className="w-6 h-6" />,
-        title: "Lebensführung",
-        description: "Entdecke Kühlungstechniken, Schlafhygiene und Stressabbau-Strategien.",
-      });
-    }
-
-    if (stage === "peri" || stage === "meno") {
-      recommendations.push({
+        title: "Lebensführung & Wellness",
+        description: "Entdecke Kühlungstechniken, Schlafhygiene und Stressabbau-Strategien für deinen Alltag.",
+      },
+      {
         icon: <Brain className="w-6 h-6" />,
         title: "Kognitive Gesundheit",
         description: "Lerne über Gehirnnebel, Gedächtnisunterstützung und psychische Gesundheit in den Wechseljahren.",
-      });
-    }
+      },
+      {
+        icon: <Calendar className="w-6 h-6" />,
+        title: "Zyklusverfolgung",
+        description: "Beobachte Veränderungen deines Zyklus und bereite dich optimal auf kommende Phasen vor.",
+      },
+      {
+        icon: <Sparkles className="w-6 h-6" />,
+        title: "Hormonelle Balance",
+        description: "Verstehe hormonelle Veränderungen und entdecke natürliche Unterstützungsmöglichkeiten.",
+      },
+      {
+        icon: <Heart className="w-6 h-6" />,
+        title: "Ernährung & Bewegung",
+        description: "Finde die richtige Balance aus Ernährung und Sport für diese Lebensphase.",
+      },
+      {
+        icon: <Brain className="w-6 h-6" />,
+        title: "Emotionales Wohlbefinden",
+        description: "Strategien für Stimmungsschwankungen und emotionale Ausgeglichenheit.",
+      }
+    ];
 
     return recommendations;
   };
