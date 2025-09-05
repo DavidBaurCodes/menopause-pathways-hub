@@ -176,7 +176,7 @@ const Lifehacks = () => {
                 Praktische <span className="text-gradient">Lifehacks</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
-                Entdecken Sie einfache, praktische Tipps für den Umgang mit Wechseljahren - 
+                Entdecke einfache, praktische Tipps für den Umgang mit Wechseljahren - 
                 für Dich und Unternehmen.
               </p>
             </div>
