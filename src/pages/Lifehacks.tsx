@@ -5,10 +5,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Lightbulb, Heart, Coffee, Moon, Dumbbell, Users, Building2, Target, TrendingUp, CheckCircle } from "lucide-react";
+import { Lightbulb, Heart, Coffee, Moon, Dumbbell, Users, Building2, Target, TrendingUp, CheckCircle, Brain } from "lucide-react";
 
 const Lifehacks = () => {
   const personalLifehacks = [
+    {
+      title: "Brainfog sofort durchbrechen",
+      description: "Einfache 3-Minuten-Technik um Gedächtnisnebel zu lichten und mentale Klarheit zurückzugewinnen.",
+      category: "Kognition",
+      difficulty: "Einfach",
+      time: "3 Min",
+      icon: <Brain className="w-5 h-5" />,
+      url: "/blog/brainfog-durchbrechen-wechseljahre"
+    },
     {
       title: "Der 5-Minuten Morgen-Boost",
       description: "Starten Sie mit einer kurzen Atemübung in den Tag für mehr Energie und Gelassenheit.",
